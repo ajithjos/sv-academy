@@ -25,6 +25,8 @@ make submodules-master-check
 make submodules-master
 ```
 
+Shared developer tooling is pinned as the `dev/devkit` submodule. Root make targets remain the daily interface; local `dev/lib/*` wrappers delegate to the devkit.
+
 Deployment commands:
 
 ```bash
