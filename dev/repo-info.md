@@ -21,6 +21,8 @@ make clean-all
 make clean-deps
 make check
 make build
+make submodules-master-check
+make submodules-master
 ```
 
 Deployment commands:

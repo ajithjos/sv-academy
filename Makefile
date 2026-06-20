@@ -6,7 +6,7 @@ IMAGE_TAG ?= $(shell git rev-parse --short HEAD 2>/dev/null || echo manual)
 
 LEGACY_COURSES ?=
 
-.PHONY: help context doctor setup clean clean-python clean-all clean-deps dev-up build start lint typecheck format format-check check course-dataset docker-build deploy-plan deploy
+.PHONY: help context doctor setup submodules-master submodules-master-check clean clean-python clean-all clean-deps dev-up build start lint typecheck format format-check check course-dataset docker-build deploy-plan deploy
 
 help: context
 
@@ -20,6 +20,12 @@ doctor:
 
 setup:
 	npm install
+
+submodules-master:
+	bash dev/lib/submodules.sh sync
+
+submodules-master-check:
+	bash dev/lib/submodules.sh check
 
 clean:
 	bash dev/lib/clean.sh routine

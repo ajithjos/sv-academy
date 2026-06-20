@@ -22,7 +22,11 @@ dev_source_env_file() {
 dev_source_env_file "$DEV_DIR/env/default.env"
 dev_source_env_file "$DEV_DIR/env/local.env"
 
-mkdir -p "$REPO_ROOT/dev/site_root" "$REPO_ROOT/dev/scratchpad"
+mkdir -p \
+	"$REPO_ROOT/dev/site_root" \
+	"$REPO_ROOT/dev/scratchpad/tmp" \
+	"$REPO_ROOT/dev/scratchpad/playground" \
+	"$REPO_ROOT/dev/scratchpad/shipment"
 
 case ":$PATH:" in
 	*":$REPO_ROOT/node_modules/.bin:"*) ;;
