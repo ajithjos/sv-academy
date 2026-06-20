@@ -1,0 +1,9 @@
+.DS_Store
+.git
+.github
+.next
+node_modules
+npm-debug.log
+README.md
+docs
+deploy/cloudrun/.env.local

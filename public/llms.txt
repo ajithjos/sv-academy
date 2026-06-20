@@ -1,0 +1,3 @@
+# SystemVerilog Academy
+
+SystemVerilog Academy publishes learning material for SystemVerilog, digital design, and verification. The current site is a public landing page that points learners to the free YouTube library.
