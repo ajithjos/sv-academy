@@ -8,3 +8,5 @@ README.md
 docs
 deploy/cloudrun/.env.local
 deploy/cloudrun/local
+dev/site_root
+dev/scratchpad

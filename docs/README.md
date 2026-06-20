@@ -30,6 +30,20 @@ Open `http://127.0.0.1:3022`.
 make check
 ```
 
+## Course Dataset
+
+Generate the full public course dataset from the legacy catalog plus the live
+YouTube channel playlists:
+
+```bash
+make course-dataset LEGACY_COURSES=/absolute/path/to/courses.py
+```
+
+This writes:
+
+- `src/content/courses.json`: generated course/module/lecture dataset for the new site
+- `docs/course-dataset-audit.md`: snapshot audit of playlist matches, missing lectures, and mixed-playlist cases
+
 ## Deployment
 
 The current deployment target is Cloud Run with a standalone Next.js container. The tracked GCP contract lives in `deploy/config/environments/prod.gcp.env`, and deploy commands fail fast when the active `gcloud` config, project, or account does not match it.
@@ -48,6 +62,7 @@ See `deploy/cloudrun/README.md`.
 - `src/app/`: Next.js public web app
 - `src/components/`: reusable UI components
 - `src/content/`: editable public copy and site configuration
+- `scripts/`: local data generation utilities
 - `docs/`: engineering notes and future architecture docs
 - `deploy/cloudrun/`: active Cloud Run deployment flow
 - `public/`: static assets

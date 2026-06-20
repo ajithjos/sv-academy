@@ -35,6 +35,8 @@ yarn-error.log*
 # local deployment overrides
 /deploy/cloudrun/local/
 /dev/env/local.env
+/dev/site_root/
+/dev/scratchpad/
 
 # vercel
 .vercel
