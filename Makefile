@@ -64,7 +64,7 @@ check: lint typecheck build
 
 course-dataset:
 	@test -n "$(LEGACY_COURSES)" || (echo "LEGACY_COURSES is required, for example: make course-dataset LEGACY_COURSES=/path/to/courses.py" && exit 1)
-	python3 scripts/generate_course_dataset.py --legacy-file "$(LEGACY_COURSES)"
+	python3 scripts/youtube_sync/generate_course_dataset.py --legacy-file "$(LEGACY_COURSES)"
 
 docker-build:
 	DEPLOY_ENV_FILE="$(DEPLOY_ENV_FILE)" IMAGE_TAG="$(IMAGE_TAG)" bash deploy/cloudrun/deploy.sh docker-build

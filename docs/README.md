@@ -43,6 +43,7 @@ This writes:
 
 - `src/content/courses.json`: generated course/module/lecture dataset for the new site
 - `docs/course-dataset-audit.md`: snapshot audit of playlist matches, missing lectures, and mixed-playlist cases
+- `scripts/youtube_sync/course-dataset-audit.md`: mirrored audit copy beside the sync script for quick iteration
 
 ## Deployment
 

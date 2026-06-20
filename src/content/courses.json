@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T13:55:30.508414Z",
+  "generatedAt": "2026-06-20T15:00:10.876267Z",
   "snapshotDate": "2026-06-20",
   "source": {
     "legacyCourseFile": "/Users/ajithjose/work/personal/svacademy/legacy_app/academy_be_hosting_01/src/apps/app_utils/client_data/management/courses/courses.py",
@@ -11,42 +11,29 @@
     }
   },
   "summary": {
-    "legacyCourseCount": 17,
-    "legacyModuleCount": 141,
-    "legacyLectureCount": 297,
-    "mappedLectureCount": 295,
+    "legacySourceCourseCount": 17,
+    "legacySourceModuleCount": 141,
+    "legacySourceLectureCount": 297,
+    "catalogCourseCount": 19,
+    "catalogModuleCount": 143,
+    "catalogLectureCount": 311,
+    "mappedLectureCount": 309,
     "missingLectureCount": 2,
-    "exactPlaylistCourseCount": 12,
+    "exactPlaylistCourseCount": 15,
     "playlistWithMissingLectureCourseCount": 2,
-    "noExactPlaylistCourseCount": 3,
-    "unmappedChannelPlaylistCount": 4
+    "noExactPlaylistCourseCount": 2,
+    "unmappedChannelPlaylistCount": 0,
+    "supplementalChannelPlaylistCount": 1
   },
-  "unmappedChannelPlaylists": [
-    {
-      "playlistId": "PL7q7nkSfmotsyJxfvQFMyUvjKzOTS47aN",
-      "playlistTitle": "Systemverilog Assertions",
-      "playlistUrl": "https://www.youtube.com/playlist?list=PL7q7nkSfmotsyJxfvQFMyUvjKzOTS47aN",
-      "playlistVideoCount": 4
-    },
-    {
-      "playlistId": "PL7q7nkSfmotuZNz8q_dTqhXY1-rZmIRfP",
-      "playlistTitle": "Systemverilog for Absolute Beginner",
-      "playlistUrl": "https://www.youtube.com/playlist?list=PL7q7nkSfmotuZNz8q_dTqhXY1-rZmIRfP",
-      "playlistVideoCount": 5
-    },
+  "supplementalChannelPlaylists": [
     {
       "playlistId": "PL7q7nkSfmotuZV2_QhFY28lHARsXPEtKf",
       "playlistTitle": "Systemverilog for Verification - Complete Udemy Courses",
       "playlistUrl": "https://www.youtube.com/playlist?list=PL7q7nkSfmotuZV2_QhFY28lHARsXPEtKf",
       "playlistVideoCount": 2
-    },
-    {
-      "playlistId": "PL7q7nkSfmotv_LRRB2fL2LX2DUtn9cztJ",
-      "playlistTitle": "UVM Beginner",
-      "playlistUrl": "https://www.youtube.com/playlist?list=PL7q7nkSfmotv_LRRB2fL2LX2DUtn9cztJ",
-      "playlistVideoCount": 6
     }
   ],
+  "unmappedChannelPlaylists": [],
   "courses": [
     {
       "courseTag": "C125_Verif05",
@@ -55,7 +42,14 @@
       "subtitle": "",
       "description": "Intermediate level course explaining functional coverage coding in Systemverilog widely used in the industry",
       "courseImage": "images/course_images/C25_SV_Verif5.jpg",
+      "source": {
+        "kind": "legacy_course"
+      },
       "legacy": {
+        "moduleCount": 14,
+        "lectureCount": 25
+      },
+      "catalog": {
         "moduleCount": 14,
         "lectureCount": 25
       },
@@ -110,7 +104,7 @@
                 "videoId": "cez56FiV2Q0",
                 "videoUrl": "https://www.youtube.com/watch?v=cez56FiV2Q0",
                 "title": "Course : Systemverilog Verification 5 : L1.1 : Welcome",
-                "thumbnailUrl": "https://i.ytimg.com/vi/cez56FiV2Q0/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvcY&rs=AOn4CLBgcfT749kd2uxnL-g0PdB0H_Fxzg",
+                "thumbnailUrl": "https://i.ytimg.com/vi/cez56FiV2Q0/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDQHkirFnerm5r0_xS4H2Yg9zP8yA",
                 "playlistId": "PL7q7nkSfmotu4ddfhdt8gW7EkMQepvTCN",
                 "playlistTitle": "Paid Course : Systemverilog Verification 5 : Functional Coverage Coding",
                 "lessonNumber": "L1.1",
@@ -121,7 +115,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.2545
+                "titleSimilarity": 0.1053
               }
             }
           ]
@@ -144,7 +138,7 @@
                 "videoId": "1t4xJF3hD98",
                 "videoUrl": "https://www.youtube.com/watch?v=1t4xJF3hD98",
                 "title": "Course : Systemverilog Verification 5 : L2.1 : What is Coverage",
-                "thumbnailUrl": "https://i.ytimg.com/vi/1t4xJF3hD98/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvcY&rs=AOn4CLCpbGXBXv_utzu5ovjTal2khELPEw",
+                "thumbnailUrl": "https://i.ytimg.com/vi/1t4xJF3hD98/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBO5DIOdIwntcD9QfJhRhV_YKRWPw",
                 "playlistId": "PL7q7nkSfmotu4ddfhdt8gW7EkMQepvTCN",
                 "playlistTitle": "Paid Course : Systemverilog Verification 5 : Functional Coverage Coding",
                 "lessonNumber": "L2.1",
@@ -155,7 +149,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.3333
+                "titleSimilarity": 0.6667
               }
             },
             {
@@ -172,7 +166,7 @@
                 "videoId": "TWmyLqPhxEc",
                 "videoUrl": "https://www.youtube.com/watch?v=TWmyLqPhxEc",
                 "title": "Course : Systemverilog Verification 5 : L2.2 : Code Coverage",
-                "thumbnailUrl": "https://i.ytimg.com/vi/TWmyLqPhxEc/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvcY&rs=AOn4CLDSetwWYDAyQBhJJyDxWtrNOK52Pw",
+                "thumbnailUrl": "https://i.ytimg.com/vi/TWmyLqPhxEc/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLA74aWJwUjjdYK7ug5Kn7BTVhoPmQ",
                 "playlistId": "PL7q7nkSfmotu4ddfhdt8gW7EkMQepvTCN",
                 "playlistTitle": "Paid Course : Systemverilog Verification 5 : Functional Coverage Coding",
                 "lessonNumber": "L2.2",
@@ -200,7 +194,7 @@
                 "videoId": "hHKX2zst0go",
                 "videoUrl": "https://www.youtube.com/watch?v=hHKX2zst0go",
                 "title": "Course : Systemverilog Verification 5 : L2.3 : Functional Coverage",
-                "thumbnailUrl": "https://i.ytimg.com/vi/hHKX2zst0go/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvcY&rs=AOn4CLCamBkWOQjtYc9HpFXr-hu15JfSXA",
+                "thumbnailUrl": "https://i.ytimg.com/vi/hHKX2zst0go/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLA8F9fDk5JM7QvaQsme25JV7nkwZA",
                 "playlistId": "PL7q7nkSfmotu4ddfhdt8gW7EkMQepvTCN",
                 "playlistTitle": "Paid Course : Systemverilog Verification 5 : Functional Coverage Coding",
                 "lessonNumber": "L2.3",
@@ -211,7 +205,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.3333
+                "titleSimilarity": 0.7333
               }
             }
           ]
@@ -234,7 +228,7 @@
                 "videoId": "jfa7xHETaO8",
                 "videoUrl": "https://www.youtube.com/watch?v=jfa7xHETaO8",
                 "title": "Course : Systemverilog Verification 5 : L3.1 : Covergroup and Coverpoints",
-                "thumbnailUrl": "https://i.ytimg.com/vi/jfa7xHETaO8/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvcY&rs=AOn4CLBpjKfrrNuSzyj4RSFOEfICKw8fSQ",
+                "thumbnailUrl": "https://i.ytimg.com/vi/jfa7xHETaO8/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBSWc100MCaxpBFPQFrw7hmkmZ7eQ",
                 "playlistId": "PL7q7nkSfmotu4ddfhdt8gW7EkMQepvTCN",
                 "playlistTitle": "Paid Course : Systemverilog Verification 5 : Functional Coverage Coding",
                 "lessonNumber": "L3.1",
@@ -262,7 +256,7 @@
                 "videoId": "SKsAlBtukZE",
                 "videoUrl": "https://www.youtube.com/watch?v=SKsAlBtukZE",
                 "title": "Course : Systemverilog Verification 5 : L3.2 : Covergroup Example",
-                "thumbnailUrl": "https://i.ytimg.com/vi/SKsAlBtukZE/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvcY&rs=AOn4CLD7HF19dRnEWQ6aPk_tWRU7nkf6wQ",
+                "thumbnailUrl": "https://i.ytimg.com/vi/SKsAlBtukZE/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBIdmnLJdzcZLASShrlBBSqn7ZoTg",
                 "playlistId": "PL7q7nkSfmotu4ddfhdt8gW7EkMQepvTCN",
                 "playlistTitle": "Paid Course : Systemverilog Verification 5 : Functional Coverage Coding",
                 "lessonNumber": "L3.2",
@@ -296,7 +290,7 @@
                 "videoId": "Oy2T-hfdRdI",
                 "videoUrl": "https://www.youtube.com/watch?v=Oy2T-hfdRdI",
                 "title": "Course : Systemverilog Verification 5 : L4.1 : Automatic Array of Bins",
-                "thumbnailUrl": "https://i.ytimg.com/vi/Oy2T-hfdRdI/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvcY&rs=AOn4CLDuDCPxJrj4Mm6bzJfMpKuZyoECpQ",
+                "thumbnailUrl": "https://i.ytimg.com/vi/Oy2T-hfdRdI/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBFnLcG7aixdNAzNcWqCNNJXry8Fw",
                 "playlistId": "PL7q7nkSfmotu4ddfhdt8gW7EkMQepvTCN",
                 "playlistTitle": "Paid Course : Systemverilog Verification 5 : Functional Coverage Coding",
                 "lessonNumber": "L4.1",
@@ -324,7 +318,7 @@
                 "videoId": "7nQBatfgR1E",
                 "videoUrl": "https://www.youtube.com/watch?v=7nQBatfgR1E",
                 "title": "Course : Systemverilog Verification 5 : L4.2 : Default Bins",
-                "thumbnailUrl": "https://i.ytimg.com/vi/7nQBatfgR1E/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvcY&rs=AOn4CLCLFNEPCaxFw5NqY1Be6tzCG06YaA",
+                "thumbnailUrl": "https://i.ytimg.com/vi/7nQBatfgR1E/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBOqHvlSc-SP5cqjoBwexjx6o5l5A",
                 "playlistId": "PL7q7nkSfmotu4ddfhdt8gW7EkMQepvTCN",
                 "playlistTitle": "Paid Course : Systemverilog Verification 5 : Functional Coverage Coding",
                 "lessonNumber": "L4.2",
@@ -352,7 +346,7 @@
                 "videoId": "7tZ4f8pQupg",
                 "videoUrl": "https://www.youtube.com/watch?v=7tZ4f8pQupg",
                 "title": "Course : Systemverilog Verification 5 : L4.3 : The iff Construct",
-                "thumbnailUrl": "https://i.ytimg.com/vi/7tZ4f8pQupg/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvcY&rs=AOn4CLBxvJqouPJMiG2lnkwzXT5Xxk9l9Q",
+                "thumbnailUrl": "https://i.ytimg.com/vi/7tZ4f8pQupg/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBn7xHksu5EFc7kJYiUuyc6Czd25A",
                 "playlistId": "PL7q7nkSfmotu4ddfhdt8gW7EkMQepvTCN",
                 "playlistTitle": "Paid Course : Systemverilog Verification 5 : Functional Coverage Coding",
                 "lessonNumber": "L4.3",
@@ -386,7 +380,7 @@
                 "videoId": "T-Jz9wa57V8",
                 "videoUrl": "https://www.youtube.com/watch?v=T-Jz9wa57V8",
                 "title": "Course : Systemverilog Verification 5 : L5.1 : Transition Bins",
-                "thumbnailUrl": "https://i.ytimg.com/vi/T-Jz9wa57V8/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvcY&rs=AOn4CLBKq2L-kR0Im0O80Ko43EL_5fXoOQ",
+                "thumbnailUrl": "https://i.ytimg.com/vi/T-Jz9wa57V8/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBsB3jbV6vu5fMWo-ZRI6Oc5X-hhQ",
                 "playlistId": "PL7q7nkSfmotu4ddfhdt8gW7EkMQepvTCN",
                 "playlistTitle": "Paid Course : Systemverilog Verification 5 : Functional Coverage Coding",
                 "lessonNumber": "L5.1",
@@ -420,7 +414,7 @@
                 "videoId": "kfdCeGxoy7k",
                 "videoUrl": "https://www.youtube.com/watch?v=kfdCeGxoy7k",
                 "title": "Course : Systemverilog Verification 5 : L6.1 : Bins Generated Automatically",
-                "thumbnailUrl": "https://i.ytimg.com/vi/kfdCeGxoy7k/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvcY&rs=AOn4CLDxxIL1EhG9gQswVcP5q7TKUMQeHQ",
+                "thumbnailUrl": "https://i.ytimg.com/vi/kfdCeGxoy7k/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBOQ5oGfqGM7wfOPxuMP-P_m2HPFA",
                 "playlistId": "PL7q7nkSfmotu4ddfhdt8gW7EkMQepvTCN",
                 "playlistTitle": "Paid Course : Systemverilog Verification 5 : Functional Coverage Coding",
                 "lessonNumber": "L6.1",
@@ -454,7 +448,7 @@
                 "videoId": "nZmT8EM2HAc",
                 "videoUrl": "https://www.youtube.com/watch?v=nZmT8EM2HAc",
                 "title": "Course : Systemverilog Verification 5 : L7.1 : Wildcard Bins",
-                "thumbnailUrl": "https://i.ytimg.com/vi/nZmT8EM2HAc/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvcY&rs=AOn4CLA2OPNRCW6S44rl9BgYgdG4cWOPJw",
+                "thumbnailUrl": "https://i.ytimg.com/vi/nZmT8EM2HAc/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLB-rY84p5a-WX3u3Vy18HZxfz0oUQ",
                 "playlistId": "PL7q7nkSfmotu4ddfhdt8gW7EkMQepvTCN",
                 "playlistTitle": "Paid Course : Systemverilog Verification 5 : Functional Coverage Coding",
                 "lessonNumber": "L7.1",
@@ -488,7 +482,7 @@
                 "videoId": "btmMo6j6ViI",
                 "videoUrl": "https://www.youtube.com/watch?v=btmMo6j6ViI",
                 "title": "Course : Systemverilog Verification 5 : L8.1 : Ignore Bins & Illegal Bins",
-                "thumbnailUrl": "https://i.ytimg.com/vi/btmMo6j6ViI/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvcY&rs=AOn4CLCip9Sqvb3NO5wNm2aXJuRfoFJpkA",
+                "thumbnailUrl": "https://i.ytimg.com/vi/btmMo6j6ViI/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAd4cFoq1YCpFgp-9cVJ8zGzOq2MA",
                 "playlistId": "PL7q7nkSfmotu4ddfhdt8gW7EkMQepvTCN",
                 "playlistTitle": "Paid Course : Systemverilog Verification 5 : Functional Coverage Coding",
                 "lessonNumber": "L8.1",
@@ -522,7 +516,7 @@
                 "videoId": "AofRO9K8t4s",
                 "videoUrl": "https://www.youtube.com/watch?v=AofRO9K8t4s",
                 "title": "Course : Systemverilog Verification 5 : L9.1 : Cross coverage",
-                "thumbnailUrl": "https://i.ytimg.com/vi/AofRO9K8t4s/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvcY&rs=AOn4CLCLd3v8lpW2MyrAGYaf73zrRJg2cQ",
+                "thumbnailUrl": "https://i.ytimg.com/vi/AofRO9K8t4s/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAEaafMoMzhF9cCNv6dwtD9PpoUFA",
                 "playlistId": "PL7q7nkSfmotu4ddfhdt8gW7EkMQepvTCN",
                 "playlistTitle": "Paid Course : Systemverilog Verification 5 : Functional Coverage Coding",
                 "lessonNumber": "L9.1",
@@ -550,7 +544,7 @@
                 "videoId": "TLEYNx9VJBA",
                 "videoUrl": "https://www.youtube.com/watch?v=TLEYNx9VJBA",
                 "title": "Course : Systemverilog Verification 5 : L9.2 : Cross Coverage Bins",
-                "thumbnailUrl": "https://i.ytimg.com/vi/TLEYNx9VJBA/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvcY&rs=AOn4CLCIL8iN29Q1Pxp_OYdbvQB9v1gH-g",
+                "thumbnailUrl": "https://i.ytimg.com/vi/TLEYNx9VJBA/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDp61iXEu_ACSJQUuXbrSXegD05DQ",
                 "playlistId": "PL7q7nkSfmotu4ddfhdt8gW7EkMQepvTCN",
                 "playlistTitle": "Paid Course : Systemverilog Verification 5 : Functional Coverage Coding",
                 "lessonNumber": "L9.2",
@@ -578,7 +572,7 @@
                 "videoId": "QANRTPRd1CU",
                 "videoUrl": "https://www.youtube.com/watch?v=QANRTPRd1CU",
                 "title": "Course : Systemverilog Verification 5 : L9.3 : Ignore Cross Bins",
-                "thumbnailUrl": "https://i.ytimg.com/vi/QANRTPRd1CU/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvcY&rs=AOn4CLBgdeVjoC226XhCSy-hjNo61Fhfkg",
+                "thumbnailUrl": "https://i.ytimg.com/vi/QANRTPRd1CU/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCGQIUSI5L1KyM6Sj5Xr_g7PxzxRA",
                 "playlistId": "PL7q7nkSfmotu4ddfhdt8gW7EkMQepvTCN",
                 "playlistTitle": "Paid Course : Systemverilog Verification 5 : Functional Coverage Coding",
                 "lessonNumber": "L9.3",
@@ -589,7 +583,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.3333
+                "titleSimilarity": 0.4561
               }
             },
             {
@@ -606,7 +600,7 @@
                 "videoId": "ISR70FKxx2k",
                 "videoUrl": "https://www.youtube.com/watch?v=ISR70FKxx2k",
                 "title": "Course : Systemverilog Verification 5 : L9.4 : Count only cross coverage",
-                "thumbnailUrl": "https://i.ytimg.com/vi/ISR70FKxx2k/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvcY&rs=AOn4CLAQpDG6QT2AG5-2yV6h3PBPCwML2A",
+                "thumbnailUrl": "https://i.ytimg.com/vi/ISR70FKxx2k/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBE3zrF9ujk9U-9SWQ_lNJOGL80sA",
                 "playlistId": "PL7q7nkSfmotu4ddfhdt8gW7EkMQepvTCN",
                 "playlistTitle": "Paid Course : Systemverilog Verification 5 : Functional Coverage Coding",
                 "lessonNumber": "L9.4",
@@ -617,7 +611,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6
+                "titleSimilarity": 0.9434
               }
             }
           ]
@@ -640,7 +634,7 @@
                 "videoId": "t_DdHJJodzc",
                 "videoUrl": "https://www.youtube.com/watch?v=t_DdHJJodzc",
                 "title": "Course : Systemverilog Verification 5 : L10.1 : Coverage Options",
-                "thumbnailUrl": "https://i.ytimg.com/vi/t_DdHJJodzc/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvcY&rs=AOn4CLDwoN3aCaKTbzSil0ARj2heojLv-g",
+                "thumbnailUrl": "https://i.ytimg.com/vi/t_DdHJJodzc/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLASmnPC9_hd4v-YBbISH-RcRqv6-A",
                 "playlistId": "PL7q7nkSfmotu4ddfhdt8gW7EkMQepvTCN",
                 "playlistTitle": "Paid Course : Systemverilog Verification 5 : Functional Coverage Coding",
                 "lessonNumber": "L10.1",
@@ -668,7 +662,7 @@
                 "videoId": "OouNvGWy3kQ",
                 "videoUrl": "https://www.youtube.com/watch?v=OouNvGWy3kQ",
                 "title": "Course : Systemverilog Verification 5 : L10.2 : Type Options",
-                "thumbnailUrl": "https://i.ytimg.com/vi/OouNvGWy3kQ/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvcY&rs=AOn4CLCNkVPRdb53rBRbkPJWAddQkXcRNQ",
+                "thumbnailUrl": "https://i.ytimg.com/vi/OouNvGWy3kQ/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBh1k4VXIrSUUy32Dzltz-1MIa4CA",
                 "playlistId": "PL7q7nkSfmotu4ddfhdt8gW7EkMQepvTCN",
                 "playlistTitle": "Paid Course : Systemverilog Verification 5 : Functional Coverage Coding",
                 "lessonNumber": "L10.2",
@@ -702,7 +696,7 @@
                 "videoId": "YWxEPB_Z7O8",
                 "videoUrl": "https://www.youtube.com/watch?v=YWxEPB_Z7O8",
                 "title": "Course : Systemverilog Verification 5 : L11.1 : Using Bind for Coverage (and in General)",
-                "thumbnailUrl": "https://i.ytimg.com/vi/YWxEPB_Z7O8/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvcY&rs=AOn4CLBVbAVSFxt3Q5YDqcmWWTGVWL0osQ",
+                "thumbnailUrl": "https://i.ytimg.com/vi/YWxEPB_Z7O8/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLD6b1UAsMAj4EHY-mHU827WmnPhTg",
                 "playlistId": "PL7q7nkSfmotu4ddfhdt8gW7EkMQepvTCN",
                 "playlistTitle": "Paid Course : Systemverilog Verification 5 : Functional Coverage Coding",
                 "lessonNumber": "L11.1",
@@ -713,7 +707,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.3168
+                "titleSimilarity": 0.4923
               }
             }
           ]
@@ -736,7 +730,7 @@
                 "videoId": "IHdFgisFZBU",
                 "videoUrl": "https://www.youtube.com/watch?v=IHdFgisFZBU",
                 "title": "Course : Systemverilog Verification 5 : L12.1 :  Parameterized Covergroup",
-                "thumbnailUrl": "https://i.ytimg.com/vi/IHdFgisFZBU/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvcY&rs=AOn4CLDknNXwQ-lgxAiqOENhsNHhsAR8lQ",
+                "thumbnailUrl": "https://i.ytimg.com/vi/IHdFgisFZBU/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDSH9sFbzCtoYFsH5HQd8V9RyrvuA",
                 "playlistId": "PL7q7nkSfmotu4ddfhdt8gW7EkMQepvTCN",
                 "playlistTitle": "Paid Course : Systemverilog Verification 5 : Functional Coverage Coding",
                 "lessonNumber": "L12.1",
@@ -747,7 +741,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5647
+                "titleSimilarity": 0.9796
               }
             }
           ]
@@ -770,7 +764,7 @@
                 "videoId": "RpuEYuipais",
                 "videoUrl": "https://www.youtube.com/watch?v=RpuEYuipais",
                 "title": "Course : Systemverilog Verification 5 : L13.1 : Example : DUT Specifications",
-                "thumbnailUrl": "https://i.ytimg.com/vi/RpuEYuipais/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvcY&rs=AOn4CLAvX4iB_ZOxDGt_o__HBNU_0Ug4fw",
+                "thumbnailUrl": "https://i.ytimg.com/vi/RpuEYuipais/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAllGJVakRwTm0e7tajcy5M2aL5Jg",
                 "playlistId": "PL7q7nkSfmotu4ddfhdt8gW7EkMQepvTCN",
                 "playlistTitle": "Paid Course : Systemverilog Verification 5 : Functional Coverage Coding",
                 "lessonNumber": "L13.1",
@@ -781,7 +775,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.25
+                "titleSimilarity": 0.4706
               }
             },
             {
@@ -798,7 +792,7 @@
                 "videoId": "VppesIv_gR0",
                 "videoUrl": "https://www.youtube.com/watch?v=VppesIv_gR0",
                 "title": "Course : Systemverilog Verification 5 : L13.2 : Example - Writing Coverage Module",
-                "thumbnailUrl": "https://i.ytimg.com/vi/VppesIv_gR0/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvcY&rs=AOn4CLARuc2bvJ-UEP2UTdTRWrxZOpmLUQ",
+                "thumbnailUrl": "https://i.ytimg.com/vi/VppesIv_gR0/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDqZfE8t6ByLIw7KTyLWzgbJVjBnQ",
                 "playlistId": "PL7q7nkSfmotu4ddfhdt8gW7EkMQepvTCN",
                 "playlistTitle": "Paid Course : Systemverilog Verification 5 : Functional Coverage Coding",
                 "lessonNumber": "L13.2",
@@ -826,7 +820,7 @@
                 "videoId": "vmifwHDQAxU",
                 "videoUrl": "https://www.youtube.com/watch?v=vmifwHDQAxU",
                 "title": "Course : Systemverilog Verification 5 : L13.3 : Writing Covergroup inside Classes in Systemverilog",
-                "thumbnailUrl": "https://i.ytimg.com/vi/vmifwHDQAxU/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvcY&rs=AOn4CLCK5iYwNWJCyR46JkHJU-pBTt0CxA",
+                "thumbnailUrl": "https://i.ytimg.com/vi/vmifwHDQAxU/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLATP-59rGTqhZ2j7KJhkc7zmcHASA",
                 "playlistId": "PL7q7nkSfmotu4ddfhdt8gW7EkMQepvTCN",
                 "playlistTitle": "Paid Course : Systemverilog Verification 5 : Functional Coverage Coding",
                 "lessonNumber": "L13.3",
@@ -837,7 +831,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.3243
+                "titleSimilarity": 0.4267
               }
             }
           ]
@@ -860,7 +854,7 @@
                 "videoId": "qXP0ATDqm1c",
                 "videoUrl": "https://www.youtube.com/watch?v=qXP0ATDqm1c",
                 "title": "Course : Systemverilog Verification 5 : L14.1 : Summary",
-                "thumbnailUrl": "https://i.ytimg.com/vi/qXP0ATDqm1c/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvcY&rs=AOn4CLAOMwJchC2HpcELkNGk5yMI68bCew",
+                "thumbnailUrl": "https://i.ytimg.com/vi/qXP0ATDqm1c/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBuYmsvo0HScDDv6rdtMQwcWJyw1Q",
                 "playlistId": "PL7q7nkSfmotu4ddfhdt8gW7EkMQepvTCN",
                 "playlistTitle": "Paid Course : Systemverilog Verification 5 : Functional Coverage Coding",
                 "lessonNumber": "L14.1",
@@ -885,7 +879,14 @@
       "subtitle": "",
       "description": "Intermediate level course explaining  Simulation Regions like Active, Reactive, NBA etc in Systemverilog",
       "courseImage": "images/course_images/C26_SV_Verif6.jpg",
+      "source": {
+        "kind": "legacy_course"
+      },
       "legacy": {
+        "moduleCount": 10,
+        "lectureCount": 13
+      },
+      "catalog": {
         "moduleCount": 10,
         "lectureCount": 13
       },
@@ -938,7 +939,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.2545
+                "titleSimilarity": 0.1053
               }
             }
           ]
@@ -1068,7 +1069,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6667
+                "titleSimilarity": 0.8667
               }
             }
           ]
@@ -1136,7 +1137,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6667
+                "titleSimilarity": 0.8182
               }
             }
           ]
@@ -1204,7 +1205,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5149
+                "titleSimilarity": 0.8
               }
             }
           ]
@@ -1238,7 +1239,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.2222
+                "titleSimilarity": 0.4444
               }
             },
             {
@@ -1266,7 +1267,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.2222
+                "titleSimilarity": 0.4444
               }
             },
             {
@@ -1294,7 +1295,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.2222
+                "titleSimilarity": 0.4444
               }
             }
           ]
@@ -1342,7 +1343,14 @@
       "subtitle": "",
       "description": "Intermediate level course teaching assertion coding in Systemverilog by adopting a simplified approch",
       "courseImage": "images/course_images/C31_SV_Assertion1.jpeg",
+      "source": {
+        "kind": "legacy_course"
+      },
       "legacy": {
+        "moduleCount": 14,
+        "lectureCount": 25
+      },
+      "catalog": {
         "moduleCount": 14,
         "lectureCount": 25
       },
@@ -1395,7 +1403,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.3043
+                "titleSimilarity": 1.0
               }
             }
           ]
@@ -1429,7 +1437,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.2476
+                "titleSimilarity": 0.3562
               }
             }
           ]
@@ -1531,7 +1539,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5479
+                "titleSimilarity": 0.9756
               }
             },
             {
@@ -1559,7 +1567,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6598
+                "titleSimilarity": 0.9846
               }
             }
           ]
@@ -1593,7 +1601,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.75
+                "titleSimilarity": 0.7941
               }
             }
           ]
@@ -1627,7 +1635,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6667
+                "titleSimilarity": 1.0
               }
             },
             {
@@ -1689,7 +1697,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6
+                "titleSimilarity": 0.75
               }
             },
             {
@@ -1717,7 +1725,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5333
+                "titleSimilarity": 0.8276
               }
             }
           ]
@@ -1751,7 +1759,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.3333
+                "titleSimilarity": 0.6207
               }
             },
             {
@@ -1779,7 +1787,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.3333
+                "titleSimilarity": 0.6207
               }
             }
           ]
@@ -1813,7 +1821,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.7
+                "titleSimilarity": 0.6364
               }
             }
           ]
@@ -1847,7 +1855,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6667
+                "titleSimilarity": 1.0
               }
             },
             {
@@ -1875,7 +1883,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.75
+                "titleSimilarity": 1.0
               }
             },
             {
@@ -1903,7 +1911,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.8
+                "titleSimilarity": 1.0
               }
             }
           ]
@@ -1937,7 +1945,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6667
+                "titleSimilarity": 1.0
               }
             },
             {
@@ -1965,7 +1973,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5854
+                "titleSimilarity": 0.96
               }
             },
             {
@@ -1993,7 +2001,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6667
+                "titleSimilarity": 1.0
               }
             },
             {
@@ -2021,7 +2029,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5636
+                "titleSimilarity": 0.7949
               }
             },
             {
@@ -2049,7 +2057,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5952
+                "titleSimilarity": 0.9615
               }
             }
           ]
@@ -2083,7 +2091,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6667
+                "titleSimilarity": 1.0
               }
             }
           ]
@@ -2145,7 +2153,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5
+                "titleSimilarity": 1.0
               }
             }
           ]
@@ -2159,7 +2167,14 @@
       "subtitle": "",
       "description": "Beginner level course in UVM that helps a quick ramp up on UVM  from basics, and to develop a UVM based TB",
       "courseImage": "images/course_images/C41_UVM1.jpg",
+      "source": {
+        "kind": "legacy_course"
+      },
       "legacy": {
+        "moduleCount": 8,
+        "lectureCount": 17
+      },
+      "catalog": {
         "moduleCount": 8,
         "lectureCount": 17
       },
@@ -2223,7 +2238,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5
+                "titleSimilarity": 0.8947
               }
             }
           ]
@@ -2257,7 +2272,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5588
+                "titleSimilarity": 1.0
               }
             }
           ]
@@ -2325,7 +2340,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6667
+                "titleSimilarity": 0.8077
               }
             }
           ]
@@ -2359,7 +2374,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.3656
+                "titleSimilarity": 0.5397
               }
             },
             {
@@ -2410,7 +2425,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.4381
+                "titleSimilarity": 0.6133
               }
             },
             {
@@ -2438,7 +2453,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5714
+                "titleSimilarity": 0.6517
               }
             },
             {
@@ -2466,7 +2481,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5324
+                "titleSimilarity": 0.6789
               }
             }
           ]
@@ -2612,7 +2627,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.2791
+                "titleSimilarity": 0.4286
               }
             },
             {
@@ -2668,7 +2683,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.3333
+                "titleSimilarity": 0.55
               }
             }
           ]
@@ -2716,7 +2731,14 @@
       "subtitle": "",
       "description": "Intermediate level course teaching t how to write a profession code for a UVM Agent",
       "courseImage": "images/course_images/C42_UVM2.jpg",
+      "source": {
+        "kind": "legacy_course"
+      },
       "legacy": {
+        "moduleCount": 6,
+        "lectureCount": 16
+      },
+      "catalog": {
         "moduleCount": 6,
         "lectureCount": 16
       },
@@ -2764,7 +2786,7 @@
                 "title": "Course : UVM in Systemverilog 3 : L7.4 : Coding AXI Agent in UVM",
                 "playlistId": "PL7q7nkSfmotvGFs1GxlyevQtV7qOA_NEq",
                 "playlistTitle": "Paid Course : UVM in Systemverilog 3: Learn The Architecture & Code Your VIP",
-                "similarity": 0.38,
+                "similarity": 0.4571,
                 "sharedTokens": [
                   "agent",
                   "axi"
@@ -2807,7 +2829,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.3182
+                "titleSimilarity": 1.0
               }
             }
           ]
@@ -2841,7 +2863,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5647
+                "titleSimilarity": 0.8727
               }
             }
           ]
@@ -2903,7 +2925,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.3269
+                "titleSimilarity": 0.3514
               }
             },
             {
@@ -2982,7 +3004,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5631
+                "titleSimilarity": 0.7945
               }
             },
             {
@@ -3010,7 +3032,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6667
+                "titleSimilarity": 0.8846
               }
             }
           ]
@@ -3128,7 +3150,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5546
+                "titleSimilarity": 0.7416
               }
             },
             {
@@ -3156,7 +3178,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6
+                "titleSimilarity": 0.7619
               }
             },
             {
@@ -3212,7 +3234,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6667
+                "titleSimilarity": 0.8
               }
             }
           ]
@@ -3260,7 +3282,14 @@
       "subtitle": "",
       "description": "Intermediate and advanced level course teaching the Universal Verification Methodology (UVM) in Systemverilog",
       "courseImage": "images/course_images/C43_UVM3.jpg",
+      "source": {
+        "kind": "legacy_course"
+      },
       "legacy": {
+        "moduleCount": 9,
+        "lectureCount": 34
+      },
+      "catalog": {
         "moduleCount": 9,
         "lectureCount": 34
       },
@@ -3313,7 +3342,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.2414
+                "titleSimilarity": 0.5
               }
             }
           ]
@@ -3347,7 +3376,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5
+                "titleSimilarity": 0.5385
               }
             }
           ]
@@ -3381,7 +3410,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.3333
+                "titleSimilarity": 0.3636
               }
             },
             {
@@ -3409,7 +3438,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.3333
+                "titleSimilarity": 0.3636
               }
             }
           ]
@@ -3443,7 +3472,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.75
+                "titleSimilarity": 0.9677
               }
             },
             {
@@ -3499,7 +3528,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5
+                "titleSimilarity": 0.7429
               }
             }
           ]
@@ -3533,7 +3562,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.4267
+                "titleSimilarity": 0.7111
               }
             },
             {
@@ -3589,7 +3618,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.1034
+                "titleSimilarity": 0.2143
               }
             },
             {
@@ -3617,7 +3646,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5
+                "titleSimilarity": 0.5882
               }
             },
             {
@@ -3673,7 +3702,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5
+                "titleSimilarity": 0.5625
               }
             },
             {
@@ -3757,7 +3786,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5
+                "titleSimilarity": 0.6111
               }
             },
             {
@@ -3785,7 +3814,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5
+                "titleSimilarity": 0.5333
               }
             }
           ]
@@ -3819,7 +3848,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.8
+                "titleSimilarity": 0.8732
               }
             },
             {
@@ -3847,7 +3876,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6777
+                "titleSimilarity": 0.7692
               }
             },
             {
@@ -3875,7 +3904,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6929
+                "titleSimilarity": 0.7835
               }
             }
           ]
@@ -3909,7 +3938,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.3333
+                "titleSimilarity": 0.64
               }
             },
             {
@@ -4077,7 +4106,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6667
+                "titleSimilarity": 0.8205
               }
             },
             {
@@ -4105,7 +4134,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.4
+                "titleSimilarity": 0.5854
               }
             },
             {
@@ -4133,7 +4162,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.4932
+                "titleSimilarity": 0.8372
               }
             }
           ]
@@ -4167,7 +4196,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5
+                "titleSimilarity": 0.75
               }
             },
             {
@@ -4195,7 +4224,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.4267
+                "titleSimilarity": 0.7111
               }
             },
             {
@@ -4294,58 +4323,83 @@
     },
     {
       "courseTag": "C101_Basic01",
-      "slug": "ic-design-process-a-beginner-s-overview-to-vlsi-technology",
-      "title": "IC Design Process: A Beginner's Overview to VLSI Technology",
+      "slug": "systemverilog-for-absolute-beginner",
+      "title": "Systemverilog for Absolute Beginner",
       "subtitle": "",
-      "description": "This short 30 mintues course will give you a quick Overview of the end to end VLSI Process",
+      "description": "Beginner-friendly SystemVerilog starter playlist covering the first program, introductory testbench work, essential data types, and basic VLSI context.",
       "courseImage": "images/course_images/C00_IC_Design.jpg",
+      "source": {
+        "kind": "legacy_playlist_override"
+      },
       "legacy": {
         "moduleCount": 1,
         "lectureCount": 1
       },
+      "catalog": {
+        "moduleCount": 1,
+        "lectureCount": 5
+      },
       "youtube": {
         "channelHandle": "@SystemverilogAcademy",
-        "playlistId": null,
-        "playlistUrl": null,
-        "playlistTitle": null,
-        "playlistVideoCount": null,
-        "mappingStatus": "video_only_no_exact_playlist",
-        "mappedLectureCount": 1,
+        "playlistId": "PL7q7nkSfmotuZNz8q_dTqhXY1-rZmIRfP",
+        "playlistUrl": "https://www.youtube.com/playlist?list=PL7q7nkSfmotuZNz8q_dTqhXY1-rZmIRfP",
+        "playlistTitle": "Systemverilog for Absolute Beginner",
+        "playlistVideoCount": 5,
+        "mappingStatus": "playlist_only_override",
+        "mappedLectureCount": 5,
         "missingLectureCount": 0,
-        "playlistCandidates": [
-          {
-            "playlistId": "PL7q7nkSfmotuZNz8q_dTqhXY1-rZmIRfP",
-            "playlistTitle": "Systemverilog for Absolute Beginner",
-            "playlistUrl": "https://www.youtube.com/playlist?list=PL7q7nkSfmotuZNz8q_dTqhXY1-rZmIRfP",
-            "playlistVideoCount": 5,
-            "overlapCount": 1,
-            "overlapVideoIds": [
-              "cIlwGFcDLhI"
-            ]
-          }
-        ]
+        "playlistCandidates": []
       },
       "audit": {
-        "lectureMatchMethods": {},
+        "lectureMatchMethods": {
+          "playlist_only": 5
+        },
         "legacyIndexCorrections": [],
         "missingLectures": [],
         "discrepancies": [
-          "No exact public playlist was found on the channel playlists tab as of 2026-06-20.",
-          "The course overlaps one or more broader public playlists, but none of them are a 1:1 legacy-course match."
+          "Legacy single-video course intentionally replaced with the public `Systemverilog for Absolute Beginner` playlist."
         ]
       },
       "modules": [
         {
           "index": 1,
-          "title": "IC Design & Manufacturing Process: Beginners Overview to VLSI",
+          "title": "Systemverilog for Absolute Beginner",
           "lectures": [
             {
               "legacyIndex": 1,
               "positionInModule": 1,
-              "title": "IC Design & Manufacturing Process: Beginners Overview to VLSI",
+              "title": "Systemverilog Essential Training: FREE 4+ Hour Course for Beginners, Students & Graduates",
               "contentType": "VID",
-              "videoSource": "YTB",
-              "legacyYoutubeUrl": "https://youtu.be/cIlwGFcDLhI",
+              "videoSource": "YOUTUBE",
+              "legacyYoutubeUrl": "",
+              "muxAssetId": "",
+              "muxPlaybackIdPublic": "",
+              "muxPlaybackIdSigned": "",
+              "youtube": {
+                "videoId": "BiCL2WjvoTU",
+                "videoUrl": "https://www.youtube.com/watch?v=BiCL2WjvoTU",
+                "title": "Systemverilog Essential Training: FREE 4+ Hour Course for Beginners, Students & Graduates",
+                "thumbnailUrl": "https://i.ytimg.com/vi/BiCL2WjvoTU/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCXzOwiqDNCOOs6qZY3T4v1jOBrCw",
+                "playlistId": "PL7q7nkSfmotuZNz8q_dTqhXY1-rZmIRfP",
+                "playlistTitle": "Systemverilog for Absolute Beginner",
+                "lessonNumber": null,
+                "moduleIndex": 1,
+                "lectureIndex": 1,
+                "durationText": "1:56"
+              },
+              "match": {
+                "status": "matched",
+                "method": "playlist_only",
+                "titleSimilarity": 1.0
+              }
+            },
+            {
+              "legacyIndex": 2,
+              "positionInModule": 2,
+              "title": "IC Design &  Manufacturing Process : Beginners Overview to VLSI",
+              "contentType": "VID",
+              "videoSource": "YOUTUBE",
+              "legacyYoutubeUrl": "",
               "muxAssetId": "",
               "muxPlaybackIdPublic": "",
               "muxPlaybackIdSigned": "",
@@ -4353,17 +4407,101 @@
                 "videoId": "cIlwGFcDLhI",
                 "videoUrl": "https://www.youtube.com/watch?v=cIlwGFcDLhI",
                 "title": "IC Design &  Manufacturing Process : Beginners Overview to VLSI",
-                "thumbnailUrl": "https://i.ytimg.com/vi/cIlwGFcDLhI/hqdefault.jpg",
-                "playlistId": null,
-                "playlistTitle": null,
+                "thumbnailUrl": "https://i.ytimg.com/vi/cIlwGFcDLhI/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDeTIKSa3F8TufPwqAarYVNE7CdKw",
+                "playlistId": "PL7q7nkSfmotuZNz8q_dTqhXY1-rZmIRfP",
+                "playlistTitle": "Systemverilog for Absolute Beginner",
                 "lessonNumber": null,
-                "moduleIndex": null,
-                "lectureIndex": null,
-                "durationText": null
+                "moduleIndex": 1,
+                "lectureIndex": 2,
+                "durationText": "32:07"
               },
               "match": {
                 "status": "matched",
-                "method": "legacy_video_id",
+                "method": "playlist_only",
+                "titleSimilarity": 1.0
+              }
+            },
+            {
+              "legacyIndex": 3,
+              "positionInModule": 3,
+              "title": "Systemverilog Training for Absolute Beginner - The first program in Systemverilog.",
+              "contentType": "VID",
+              "videoSource": "YOUTUBE",
+              "legacyYoutubeUrl": "",
+              "muxAssetId": "",
+              "muxPlaybackIdPublic": "",
+              "muxPlaybackIdSigned": "",
+              "youtube": {
+                "videoId": "jj43dXB0i7A",
+                "videoUrl": "https://www.youtube.com/watch?v=jj43dXB0i7A",
+                "title": "Systemverilog Training for Absolute Beginner - The first program in Systemverilog.",
+                "thumbnailUrl": "https://i.ytimg.com/vi/jj43dXB0i7A/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCtBUmLU-2t8IcYU83DCylAi_bbfw",
+                "playlistId": "PL7q7nkSfmotuZNz8q_dTqhXY1-rZmIRfP",
+                "playlistTitle": "Systemverilog for Absolute Beginner",
+                "lessonNumber": null,
+                "moduleIndex": 1,
+                "lectureIndex": 3,
+                "durationText": "12:16"
+              },
+              "match": {
+                "status": "matched",
+                "method": "playlist_only",
+                "titleSimilarity": 1.0
+              }
+            },
+            {
+              "legacyIndex": 4,
+              "positionInModule": 4,
+              "title": "Systemverilog Tutorial: SV for Absolute Beginner - Writing TestBench & Using Free Simulators",
+              "contentType": "VID",
+              "videoSource": "YOUTUBE",
+              "legacyYoutubeUrl": "",
+              "muxAssetId": "",
+              "muxPlaybackIdPublic": "",
+              "muxPlaybackIdSigned": "",
+              "youtube": {
+                "videoId": "ZxWn7VhQz0A",
+                "videoUrl": "https://www.youtube.com/watch?v=ZxWn7VhQz0A",
+                "title": "Systemverilog Tutorial: SV for Absolute Beginner - Writing TestBench & Using Free Simulators",
+                "thumbnailUrl": "https://i.ytimg.com/vi/ZxWn7VhQz0A/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLD1rTp_aAqXK7iDFUsZwz3mJ_wkgA",
+                "playlistId": "PL7q7nkSfmotuZNz8q_dTqhXY1-rZmIRfP",
+                "playlistTitle": "Systemverilog for Absolute Beginner",
+                "lessonNumber": null,
+                "moduleIndex": 1,
+                "lectureIndex": 4,
+                "durationText": "21:01"
+              },
+              "match": {
+                "status": "matched",
+                "method": "playlist_only",
+                "titleSimilarity": 1.0
+              }
+            },
+            {
+              "legacyIndex": 5,
+              "positionInModule": 5,
+              "title": "Systemverilog Data Types Simplified : How to map Verilog Datatypes with those in SV ?",
+              "contentType": "VID",
+              "videoSource": "YOUTUBE",
+              "legacyYoutubeUrl": "",
+              "muxAssetId": "",
+              "muxPlaybackIdPublic": "",
+              "muxPlaybackIdSigned": "",
+              "youtube": {
+                "videoId": "OENX60WjJ9E",
+                "videoUrl": "https://www.youtube.com/watch?v=OENX60WjJ9E",
+                "title": "Systemverilog Data Types Simplified : How to map Verilog Datatypes with those in SV ?",
+                "thumbnailUrl": "https://i.ytimg.com/vi/OENX60WjJ9E/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCLU0l9ufgjInNLZNaLpBjfitLAsQ",
+                "playlistId": "PL7q7nkSfmotuZNz8q_dTqhXY1-rZmIRfP",
+                "playlistTitle": "Systemverilog for Absolute Beginner",
+                "lessonNumber": null,
+                "moduleIndex": 1,
+                "lectureIndex": 5,
+                "durationText": "18:20"
+              },
+              "match": {
+                "status": "matched",
+                "method": "playlist_only",
                 "titleSimilarity": 1.0
               }
             }
@@ -4378,7 +4516,14 @@
       "subtitle": "",
       "description": "Beginner level course in SoC verification.  Teaches the basics of SV programming for verification",
       "courseImage": "images/course_images/C21_SV_Verif1.jpg",
+      "source": {
+        "kind": "legacy_course"
+      },
       "legacy": {
+        "moduleCount": 8,
+        "lectureCount": 11
+      },
+      "catalog": {
         "moduleCount": 8,
         "lectureCount": 11
       },
@@ -4431,7 +4576,7 @@
               "match": {
                 "status": "matched",
                 "method": "legacy_video_id",
-                "titleSimilarity": 0.28
+                "titleSimilarity": 1.0
               }
             }
           ]
@@ -4589,7 +4734,7 @@
               "match": {
                 "status": "matched",
                 "method": "legacy_video_id",
-                "titleSimilarity": 0.5366
+                "titleSimilarity": 0.9565
               }
             },
             {
@@ -4767,7 +4912,14 @@
       "subtitle": "",
       "description": "Intermediate level course explaining assignment statements in SV & and their circuits generated in Synthesis",
       "courseImage": "images/course_images/C11_SV_Design1.jpg",
+      "source": {
+        "kind": "legacy_course"
+      },
       "legacy": {
+        "moduleCount": 8,
+        "lectureCount": 21
+      },
+      "catalog": {
         "moduleCount": 8,
         "lectureCount": 21
       },
@@ -4820,7 +4972,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.4444
+                "titleSimilarity": 1.0
               }
             }
           ]
@@ -4854,7 +5006,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5231
+                "titleSimilarity": 0.9714
               }
             }
           ]
@@ -4888,7 +5040,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.3333
+                "titleSimilarity": 0.5417
               }
             },
             {
@@ -4984,7 +5136,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.561
+                "titleSimilarity": 0.8846
               }
             },
             {
@@ -5040,7 +5192,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.4667
+                "titleSimilarity": 0.7
               }
             },
             {
@@ -5158,7 +5310,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6
+                "titleSimilarity": 0.8
               }
             },
             {
@@ -5186,7 +5338,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5
+                "titleSimilarity": 0.6
               }
             },
             {
@@ -5214,7 +5366,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5
+                "titleSimilarity": 0.5932
               }
             },
             {
@@ -5270,7 +5422,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.4225
+                "titleSimilarity": 0.5357
               }
             }
           ]
@@ -5304,7 +5456,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.2444
+                "titleSimilarity": 0.3667
               }
             },
             {
@@ -5332,7 +5484,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5
+                "titleSimilarity": 0.5833
               }
             },
             {
@@ -5360,7 +5512,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.4
+                "titleSimilarity": 0.48
               }
             },
             {
@@ -5388,7 +5540,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.4
+                "titleSimilarity": 0.48
               }
             }
           ]
@@ -5436,7 +5588,14 @@
       "subtitle": "",
       "description": "Beginner level course explaining basics of programming in Systemverilog with live examples",
       "courseImage": "images/course_images/C01_SV_Beginner.jpg",
+      "source": {
+        "kind": "legacy_course"
+      },
       "legacy": {
+        "moduleCount": 13,
+        "lectureCount": 26
+      },
+      "catalog": {
         "moduleCount": 13,
         "lectureCount": 26
       },
@@ -5502,7 +5661,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.1538
+                "titleSimilarity": 0.2105
               }
             }
           ]
@@ -5536,7 +5695,7 @@
               "match": {
                 "status": "matched",
                 "method": "module_position",
-                "titleSimilarity": 0.6458
+                "titleSimilarity": 0.9841
               }
             }
           ]
@@ -5570,7 +5729,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6024
+                "titleSimilarity": 1.0
               }
             },
             {
@@ -5598,7 +5757,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5
+                "titleSimilarity": 1.0
               }
             },
             {
@@ -5626,7 +5785,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6667
+                "titleSimilarity": 1.0
               }
             },
             {
@@ -5654,7 +5813,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.75
+                "titleSimilarity": 1.0
               }
             }
           ]
@@ -5688,7 +5847,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5
+                "titleSimilarity": 0.8511
               }
             }
           ]
@@ -5722,7 +5881,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6667
+                "titleSimilarity": 1.0
               }
             },
             {
@@ -5750,7 +5909,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5405
+                "titleSimilarity": 0.9756
               }
             },
             {
@@ -5778,7 +5937,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6047
+                "titleSimilarity": 0.9811
               }
             },
             {
@@ -5806,7 +5965,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6667
+                "titleSimilarity": 1.0
               }
             },
             {
@@ -5834,7 +5993,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6667
+                "titleSimilarity": 1.0
               }
             }
           ]
@@ -5868,7 +6027,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.7222
+                "titleSimilarity": 0.9369
               }
             }
           ]
@@ -5902,7 +6061,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6667
+                "titleSimilarity": 1.0
               }
             },
             {
@@ -5930,7 +6089,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.75
+                "titleSimilarity": 1.0
               }
             }
           ]
@@ -5964,7 +6123,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.3333
+                "titleSimilarity": 0.4
               }
             }
           ]
@@ -5998,7 +6157,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6098
+                "titleSimilarity": 0.9796
               }
             }
           ]
@@ -6032,7 +6191,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.25
+                "titleSimilarity": 0.254
               }
             },
             {
@@ -6060,7 +6219,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5556
+                "titleSimilarity": 0.9744
               }
             },
             {
@@ -6122,7 +6281,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6667
+                "titleSimilarity": 1.0
               }
             }
           ]
@@ -6156,7 +6315,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.25
+                "titleSimilarity": 0.3448
               }
             },
             {
@@ -6184,7 +6343,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.2973
+                "titleSimilarity": 0.5366
               }
             },
             {
@@ -6212,7 +6371,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.25
+                "titleSimilarity": 0.3333
               }
             },
             {
@@ -6240,7 +6399,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.2703
+                "titleSimilarity": 0.4878
               }
             }
           ]
@@ -6274,7 +6433,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5
+                "titleSimilarity": 1.0
               }
             }
           ]
@@ -6288,7 +6447,14 @@
       "subtitle": "",
       "description": "Intermediate level course explaining SV specific features widely used for RTL design compared to Verilog",
       "courseImage": "images/course_images/C12_SV_Design2.jpg",
+      "source": {
+        "kind": "legacy_course"
+      },
       "legacy": {
+        "moduleCount": 9,
+        "lectureCount": 24
+      },
+      "catalog": {
         "moduleCount": 9,
         "lectureCount": 24
       },
@@ -6341,7 +6507,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.4444
+                "titleSimilarity": 1.0
               }
             }
           ]
@@ -6403,7 +6569,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.2979
+                "titleSimilarity": 0.3125
               }
             },
             {
@@ -6431,7 +6597,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.448
+                "titleSimilarity": 0.5053
               }
             }
           ]
@@ -6499,7 +6665,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.3333
+                "titleSimilarity": 0.3396
               }
             },
             {
@@ -6527,7 +6693,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6667
+                "titleSimilarity": 0.875
               }
             },
             {
@@ -6617,7 +6783,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.2785
+                "titleSimilarity": 0.449
               }
             },
             {
@@ -6645,7 +6811,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.2921
+                "titleSimilarity": 0.4407
               }
             },
             {
@@ -6673,7 +6839,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.2597
+                "titleSimilarity": 0.4255
               }
             }
           ]
@@ -6707,7 +6873,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.2353
+                "titleSimilarity": 0.3333
               }
             },
             {
@@ -6735,7 +6901,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.2745
+                "titleSimilarity": 0.3889
               }
             },
             {
@@ -6763,7 +6929,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.2574
+                "titleSimilarity": 0.3662
               }
             }
           ]
@@ -6797,7 +6963,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.2571
+                "titleSimilarity": 0.45
               }
             },
             {
@@ -6825,7 +6991,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.3333
+                "titleSimilarity": 0.5333
               }
             },
             {
@@ -6853,7 +7019,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6142
+                "titleSimilarity": 0.8041
               }
             }
           ]
@@ -6915,7 +7081,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6667
+                "titleSimilarity": 0.7027
               }
             },
             {
@@ -6943,7 +7109,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6667
+                "titleSimilarity": 0.7843
               }
             },
             {
@@ -6971,7 +7137,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.3429
+                "titleSimilarity": 0.48
               }
             },
             {
@@ -6999,7 +7165,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.4561
+                "titleSimilarity": 0.619
               }
             }
           ]
@@ -7047,7 +7213,14 @@
       "subtitle": "",
       "description": "Advance level course doing an end to end walk-through on a professional SoC in System",
       "courseImage": "images/course_images/C13_SV_Design3.jpg",
+      "source": {
+        "kind": "legacy_course"
+      },
       "legacy": {
+        "moduleCount": 8,
+        "lectureCount": 24
+      },
+      "catalog": {
         "moduleCount": 8,
         "lectureCount": 24
       },
@@ -7100,7 +7273,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.4444
+                "titleSimilarity": 1.0
               }
             }
           ]
@@ -7134,7 +7307,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5
+                "titleSimilarity": 0.7556
               }
             }
           ]
@@ -7168,7 +7341,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5507
+                "titleSimilarity": 0.9744
               }
             },
             {
@@ -7230,7 +7403,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6667
+                "titleSimilarity": 0.7467
               }
             },
             {
@@ -7258,7 +7431,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6667
+                "titleSimilarity": 0.7467
               }
             },
             {
@@ -7286,7 +7459,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.44
+                "titleSimilarity": 0.6286
               }
             },
             {
@@ -7314,7 +7487,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.3333
+                "titleSimilarity": 0.3871
               }
             },
             {
@@ -7342,7 +7515,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.297
+                "titleSimilarity": 0.4225
               }
             }
           ]
@@ -7376,7 +7549,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.4035
+                "titleSimilarity": 0.5476
               }
             },
             {
@@ -7466,7 +7639,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6667
+                "titleSimilarity": 0.7059
               }
             },
             {
@@ -7606,7 +7779,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5
+                "titleSimilarity": 0.5714
               }
             }
           ]
@@ -7696,7 +7869,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.4
+                "titleSimilarity": 0.5246
               }
             },
             {
@@ -7724,7 +7897,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5
+                "titleSimilarity": 0.625
               }
             },
             {
@@ -7752,7 +7925,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.0779
+                "titleSimilarity": 0.1277
               }
             }
           ]
@@ -7800,7 +7973,14 @@
       "subtitle": "",
       "description": "Intermediate level course explaining  Object oriented programming (OOPs) in Systemverilog",
       "courseImage": "images/course_images/C23_SV_Verif3.jpg",
+      "source": {
+        "kind": "legacy_course"
+      },
       "legacy": {
+        "moduleCount": 11,
+        "lectureCount": 22
+      },
+      "catalog": {
         "moduleCount": 11,
         "lectureCount": 22
       },
@@ -7855,7 +8035,7 @@
                 "videoId": "Bam8TvtScJI",
                 "videoUrl": "https://www.youtube.com/watch?v=Bam8TvtScJI",
                 "title": "Course : Systemverilog Verification 3 : L1.1 : Welcome",
-                "thumbnailUrl": "https://i.ytimg.com/vi/Bam8TvtScJI/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvMY&rs=AOn4CLCGMP9Y3NgzLThBbBGu6AljPHTBcw",
+                "thumbnailUrl": "https://i.ytimg.com/vi/Bam8TvtScJI/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDGIk-qOmAp6KhQ0jb-dyr3AZm-ZQ",
                 "playlistId": "PL7q7nkSfmotutQcM9VergQFUpyLs6diJ5",
                 "playlistTitle": "Paid Course : Systemverilog Verification 3 : Object Oriented Programming in SV",
                 "lessonNumber": "L1.1",
@@ -7866,7 +8046,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.2545
+                "titleSimilarity": 0.1053
               }
             }
           ]
@@ -7889,7 +8069,7 @@
                 "videoId": "vIVo4Aza3gs",
                 "videoUrl": "https://www.youtube.com/watch?v=vIVo4Aza3gs",
                 "title": "Course : Systemverilog Verification 3 : L2.1 : Array, Structure & Union",
-                "thumbnailUrl": "https://i.ytimg.com/vi/vIVo4Aza3gs/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvMY&rs=AOn4CLBlxaode2pQmv2fObZCL1LwDF-Wlg",
+                "thumbnailUrl": "https://i.ytimg.com/vi/vIVo4Aza3gs/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDY5ZpQvSeHl7b_EH0IXd_qOQ1q2Q",
                 "playlistId": "PL7q7nkSfmotutQcM9VergQFUpyLs6diJ5",
                 "playlistTitle": "Paid Course : Systemverilog Verification 3 : Object Oriented Programming in SV",
                 "lessonNumber": "L2.1",
@@ -7923,7 +8103,7 @@
                 "videoId": "KMvR0aNcyHc",
                 "videoUrl": "https://www.youtube.com/watch?v=KMvR0aNcyHc",
                 "title": "Course : Systemverilog Verification 3 : L3.1 : Class Definition",
-                "thumbnailUrl": "https://i.ytimg.com/vi/KMvR0aNcyHc/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvMY&rs=AOn4CLBMYWDo0lzNZHEL-44ni2CLXMQWbA",
+                "thumbnailUrl": "https://i.ytimg.com/vi/KMvR0aNcyHc/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAEoYUB2Bx39V9AnIstDuq-eHyurA",
                 "playlistId": "PL7q7nkSfmotutQcM9VergQFUpyLs6diJ5",
                 "playlistTitle": "Paid Course : Systemverilog Verification 3 : Object Oriented Programming in SV",
                 "lessonNumber": "L3.1",
@@ -7951,7 +8131,7 @@
                 "videoId": "FZuQY2o3_LY",
                 "videoUrl": "https://www.youtube.com/watch?v=FZuQY2o3_LY",
                 "title": "Course : Systemverilog Verification 3 : L3.2 : Object",
-                "thumbnailUrl": "https://i.ytimg.com/vi/FZuQY2o3_LY/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvMY&rs=AOn4CLDskvNVo4bGFpvZniAzp964DpQQiA",
+                "thumbnailUrl": "https://i.ytimg.com/vi/FZuQY2o3_LY/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLA-cMledWNOGuiwtOFtsxT0L1LePA",
                 "playlistId": "PL7q7nkSfmotutQcM9VergQFUpyLs6diJ5",
                 "playlistTitle": "Paid Course : Systemverilog Verification 3 : Object Oriented Programming in SV",
                 "lessonNumber": "L3.2",
@@ -7979,7 +8159,7 @@
                 "videoId": "hcIKX0xvCF4",
                 "videoUrl": "https://www.youtube.com/watch?v=hcIKX0xvCF4",
                 "title": "Course : Systemverilog Verification 3 : L3.3 : Keywords 'new' & 'this'",
-                "thumbnailUrl": "https://i.ytimg.com/vi/hcIKX0xvCF4/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvMY&rs=AOn4CLDH-d6txYzyTnHdpe9V1EJZ-4LcKQ",
+                "thumbnailUrl": "https://i.ytimg.com/vi/hcIKX0xvCF4/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAcz3fAwTURMv2BCBVE_hiPrCWVdQ",
                 "playlistId": "PL7q7nkSfmotutQcM9VergQFUpyLs6diJ5",
                 "playlistTitle": "Paid Course : Systemverilog Verification 3 : Object Oriented Programming in SV",
                 "lessonNumber": "L3.3",
@@ -7990,7 +8170,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6667
+                "titleSimilarity": 0.7273
               }
             }
           ]
@@ -8013,7 +8193,7 @@
                 "videoId": "Yal5MwwupBs",
                 "videoUrl": "https://www.youtube.com/watch?v=Yal5MwwupBs",
                 "title": "Course : Systemverilog Verification 3 : L4.1 : Inheritance",
-                "thumbnailUrl": "https://i.ytimg.com/vi/Yal5MwwupBs/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvMY&rs=AOn4CLCZNgAO40SCSx3X15XLJqT1hbbQgg",
+                "thumbnailUrl": "https://i.ytimg.com/vi/Yal5MwwupBs/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBZjuMXsXMwZhLs-IKMcRPFzWxtJw",
                 "playlistId": "PL7q7nkSfmotutQcM9VergQFUpyLs6diJ5",
                 "playlistTitle": "Paid Course : Systemverilog Verification 3 : Object Oriented Programming in SV",
                 "lessonNumber": "L4.1",
@@ -8024,7 +8204,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.3448
+                "titleSimilarity": 0.9091
               }
             },
             {
@@ -8041,7 +8221,7 @@
                 "videoId": "l-svv43ubJg",
                 "videoUrl": "https://www.youtube.com/watch?v=l-svv43ubJg",
                 "title": "Course : Systemverilog Verification 3 : L4.2 : Inheritance Example",
-                "thumbnailUrl": "https://i.ytimg.com/vi/l-svv43ubJg/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvMY&rs=AOn4CLD5nc1O2CGcJqjYP96e8GgjCvTYOQ",
+                "thumbnailUrl": "https://i.ytimg.com/vi/l-svv43ubJg/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCUO9P9xn7Sva0bYBra1V4aFaZ6xw",
                 "playlistId": "PL7q7nkSfmotutQcM9VergQFUpyLs6diJ5",
                 "playlistTitle": "Paid Course : Systemverilog Verification 3 : Object Oriented Programming in SV",
                 "lessonNumber": "L4.2",
@@ -8052,7 +8232,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.4865
+                "titleSimilarity": 0.9474
               }
             },
             {
@@ -8069,7 +8249,7 @@
                 "videoId": "Y_q13slQRto",
                 "videoUrl": "https://www.youtube.com/watch?v=Y_q13slQRto",
                 "title": "Course : Systemverilog Verification 3 : L4.3 : Assigning Base Class & Derived Class Objects",
-                "thumbnailUrl": "https://i.ytimg.com/vi/Y_q13slQRto/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvMY&rs=AOn4CLCIJFP7gt2nxzFRliAFZaPvOz3e5A",
+                "thumbnailUrl": "https://i.ytimg.com/vi/Y_q13slQRto/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDnelTwGoOJVF0yafOetJY1xFwEmg",
                 "playlistId": "PL7q7nkSfmotutQcM9VergQFUpyLs6diJ5",
                 "playlistTitle": "Paid Course : Systemverilog Verification 3 : Object Oriented Programming in SV",
                 "lessonNumber": "L4.3",
@@ -8103,7 +8283,7 @@
                 "videoId": "F5-sA4RO0-s",
                 "videoUrl": "https://www.youtube.com/watch?v=F5-sA4RO0-s",
                 "title": "Course : Systemverilog Verification 3 : L5.1 : Overriding vs Overloading",
-                "thumbnailUrl": "https://i.ytimg.com/vi/F5-sA4RO0-s/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvMY&rs=AOn4CLArOo14LyzE7HK1WPkreoYYdv9bHg",
+                "thumbnailUrl": "https://i.ytimg.com/vi/F5-sA4RO0-s/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCZm5hUaquRXs-kcR5d3XdVtJRS7A",
                 "playlistId": "PL7q7nkSfmotutQcM9VergQFUpyLs6diJ5",
                 "playlistTitle": "Paid Course : Systemverilog Verification 3 : Object Oriented Programming in SV",
                 "lessonNumber": "L5.1",
@@ -8131,7 +8311,7 @@
                 "videoId": "HHUJ9mNErZA",
                 "videoUrl": "https://www.youtube.com/watch?v=HHUJ9mNErZA",
                 "title": "Course : Systemverilog Verification 3 : L5.2 : Overriding Data Members",
-                "thumbnailUrl": "https://i.ytimg.com/vi/HHUJ9mNErZA/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvMY&rs=AOn4CLAcA-dh_Kvlfm49kcYROTPX1BgXyw",
+                "thumbnailUrl": "https://i.ytimg.com/vi/HHUJ9mNErZA/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCphKR6y9JesJaUZ7kaAbWay6d8UA",
                 "playlistId": "PL7q7nkSfmotutQcM9VergQFUpyLs6diJ5",
                 "playlistTitle": "Paid Course : Systemverilog Verification 3 : Object Oriented Programming in SV",
                 "lessonNumber": "L5.2",
@@ -8159,7 +8339,7 @@
                 "videoId": "mqTWXg9UyXw",
                 "videoUrl": "https://www.youtube.com/watch?v=mqTWXg9UyXw",
                 "title": "Course : Systemverilog Verification 3 : L5.3 : Overriding Member Functions",
-                "thumbnailUrl": "https://i.ytimg.com/vi/mqTWXg9UyXw/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvMY&rs=AOn4CLCNQ3MEXBltnbHrt4Hz7MEMKPnSbw",
+                "thumbnailUrl": "https://i.ytimg.com/vi/mqTWXg9UyXw/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDt-wWAt_Qwi1I1Pi7bg2DvK_FDQw",
                 "playlistId": "PL7q7nkSfmotutQcM9VergQFUpyLs6diJ5",
                 "playlistTitle": "Paid Course : Systemverilog Verification 3 : Object Oriented Programming in SV",
                 "lessonNumber": "L5.3",
@@ -8170,7 +8350,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.5778
+                "titleSimilarity": 0.963
               }
             },
             {
@@ -8187,7 +8367,7 @@
                 "videoId": "xf72MVAI6fU",
                 "videoUrl": "https://www.youtube.com/watch?v=xf72MVAI6fU",
                 "title": "Course : Systemverilog Verification 3 : L5.4 : Using the keyword 'super'",
-                "thumbnailUrl": "https://i.ytimg.com/vi/xf72MVAI6fU/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvMY&rs=AOn4CLBOCWCZQNMTexvxCLbVl7riRxoQpw",
+                "thumbnailUrl": "https://i.ytimg.com/vi/xf72MVAI6fU/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAPcNg4WTTdiohAhc47ZO_7ZzIA0A",
                 "playlistId": "PL7q7nkSfmotutQcM9VergQFUpyLs6diJ5",
                 "playlistTitle": "Paid Course : Systemverilog Verification 3 : Object Oriented Programming in SV",
                 "lessonNumber": "L5.4",
@@ -8198,7 +8378,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6667
+                "titleSimilarity": 0.85
               }
             }
           ]
@@ -8221,7 +8401,7 @@
                 "videoId": "QGh06j11mR8",
                 "videoUrl": "https://www.youtube.com/watch?v=QGh06j11mR8",
                 "title": "Course : Systemverilog Verification 3 : L6.1 : Data Hiding",
-                "thumbnailUrl": "https://i.ytimg.com/vi/QGh06j11mR8/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvMY&rs=AOn4CLBg7LWl3ILo5qNCSQ-2L8yt5wu9Ng",
+                "thumbnailUrl": "https://i.ytimg.com/vi/QGh06j11mR8/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBEAT1p6DIj9EBY3egfLHV77hgF2g",
                 "playlistId": "PL7q7nkSfmotutQcM9VergQFUpyLs6diJ5",
                 "playlistTitle": "Paid Course : Systemverilog Verification 3 : Object Oriented Programming in SV",
                 "lessonNumber": "L6.1",
@@ -8255,7 +8435,7 @@
                 "videoId": "gK2QV0C8LdE",
                 "videoUrl": "https://www.youtube.com/watch?v=gK2QV0C8LdE",
                 "title": "Course : Systemverilog Verification 3 : L7.1 : Abstract Class",
-                "thumbnailUrl": "https://i.ytimg.com/vi/gK2QV0C8LdE/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvMY&rs=AOn4CLAatRGPeQdMRDcCaWjjWgv5JopjQQ",
+                "thumbnailUrl": "https://i.ytimg.com/vi/gK2QV0C8LdE/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDNNla2ZLycVvwFQ3w2agNg7vsXlQ",
                 "playlistId": "PL7q7nkSfmotutQcM9VergQFUpyLs6diJ5",
                 "playlistTitle": "Paid Course : Systemverilog Verification 3 : Object Oriented Programming in SV",
                 "lessonNumber": "L7.1",
@@ -8289,7 +8469,7 @@
                 "videoId": "Pla11eqxVBo",
                 "videoUrl": "https://www.youtube.com/watch?v=Pla11eqxVBo",
                 "title": "Course : Systemverilog Verification 3 : L8.1 : Parameterized Class",
-                "thumbnailUrl": "https://i.ytimg.com/vi/Pla11eqxVBo/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvMY&rs=AOn4CLCONAK38uv4i2St_tmDHcUTiFRFRQ",
+                "thumbnailUrl": "https://i.ytimg.com/vi/Pla11eqxVBo/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDvlb6YLyD0Ybrqc4DhvBnfSPUkiQ",
                 "playlistId": "PL7q7nkSfmotutQcM9VergQFUpyLs6diJ5",
                 "playlistTitle": "Paid Course : Systemverilog Verification 3 : Object Oriented Programming in SV",
                 "lessonNumber": "L8.1",
@@ -8323,7 +8503,7 @@
                 "videoId": "F30plhFjnrE",
                 "videoUrl": "https://www.youtube.com/watch?v=F30plhFjnrE",
                 "title": "Course : Systemverilog Verification 3 : L9.1 : Deep and Shallow Copy",
-                "thumbnailUrl": "https://i.ytimg.com/vi/F30plhFjnrE/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvMY&rs=AOn4CLA3WsOWFrQlMi3pwLPQSnt_GIBG1Q",
+                "thumbnailUrl": "https://i.ytimg.com/vi/F30plhFjnrE/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAeqiQ8Hel0hvOppqJ9KSg_PXHb7A",
                 "playlistId": "PL7q7nkSfmotutQcM9VergQFUpyLs6diJ5",
                 "playlistTitle": "Paid Course : Systemverilog Verification 3 : Object Oriented Programming in SV",
                 "lessonNumber": "L9.1",
@@ -8334,7 +8514,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6667
+                "titleSimilarity": 0.8649
               }
             }
           ]
@@ -8357,7 +8537,7 @@
                 "videoId": "ATgXpwaUKJw",
                 "videoUrl": "https://www.youtube.com/watch?v=ATgXpwaUKJw",
                 "title": "Course : Systemverilog Verification 3 : L10.1 : Class Based TB Structure",
-                "thumbnailUrl": "https://i.ytimg.com/vi/ATgXpwaUKJw/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvMY&rs=AOn4CLAqArSYo6d8bmqbLGhOHclw62S7ug",
+                "thumbnailUrl": "https://i.ytimg.com/vi/ATgXpwaUKJw/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDLOOdALIX7Cec4EDVjMZ7Q-g7XeQ",
                 "playlistId": "PL7q7nkSfmotutQcM9VergQFUpyLs6diJ5",
                 "playlistTitle": "Paid Course : Systemverilog Verification 3 : Object Oriented Programming in SV",
                 "lessonNumber": "L10.1",
@@ -8368,7 +8548,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.6
+                "titleSimilarity": 0.8727
               }
             },
             {
@@ -8385,7 +8565,7 @@
                 "videoId": "ZgF5KQXXK4Y",
                 "videoUrl": "https://www.youtube.com/watch?v=ZgF5KQXXK4Y",
                 "title": "Course : Systemverilog Verification 3 : L10.2 : Command Specifications",
-                "thumbnailUrl": "https://i.ytimg.com/vi/ZgF5KQXXK4Y/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvMY&rs=AOn4CLDXSepV7YUBTL8JL0muw_Gv7BdNkg",
+                "thumbnailUrl": "https://i.ytimg.com/vi/ZgF5KQXXK4Y/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDM8R49Zw_7RhcZp0CbQfaogGwu9A",
                 "playlistId": "PL7q7nkSfmotutQcM9VergQFUpyLs6diJ5",
                 "playlistTitle": "Paid Course : Systemverilog Verification 3 : Object Oriented Programming in SV",
                 "lessonNumber": "L10.2",
@@ -8413,7 +8593,7 @@
                 "videoId": "L7q_Tjiua4E",
                 "videoUrl": "https://www.youtube.com/watch?v=L7q_Tjiua4E",
                 "title": "Course : Systemverilog Verification 3 : L10.3 : OOPs Example: Writing Command Base Class",
-                "thumbnailUrl": "https://i.ytimg.com/vi/L7q_Tjiua4E/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvMY&rs=AOn4CLAAwuZktIes2GO-UUYTuWJrKPBbqQ",
+                "thumbnailUrl": "https://i.ytimg.com/vi/L7q_Tjiua4E/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDStAoX21BhBqs5rs0FJCP_ECZKFQ",
                 "playlistId": "PL7q7nkSfmotutQcM9VergQFUpyLs6diJ5",
                 "playlistTitle": "Paid Course : Systemverilog Verification 3 : Object Oriented Programming in SV",
                 "lessonNumber": "L10.3",
@@ -8424,7 +8604,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.3396
+                "titleSimilarity": 0.5143
               }
             },
             {
@@ -8441,7 +8621,7 @@
                 "videoId": "joOURJLOnAw",
                 "videoUrl": "https://www.youtube.com/watch?v=joOURJLOnAw",
                 "title": "Course : Systemverilog Verification 3 : L10.4: OOPs Example: Writing CPU & Memory Command Classes",
-                "thumbnailUrl": "https://i.ytimg.com/vi/joOURJLOnAw/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvMY&rs=AOn4CLC7d51hnkh2TbRQct6tNx4qG2ottg",
+                "thumbnailUrl": "https://i.ytimg.com/vi/joOURJLOnAw/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDC5dHhsLTrhvSen1lr1xX3Fa-wyQ",
                 "playlistId": "PL7q7nkSfmotutQcM9VergQFUpyLs6diJ5",
                 "playlistTitle": "Paid Course : Systemverilog Verification 3 : Object Oriented Programming in SV",
                 "lessonNumber": "L10.4",
@@ -8452,7 +8632,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.3721
+                "titleSimilarity": 0.5161
               }
             },
             {
@@ -8469,7 +8649,7 @@
                 "videoId": "SgDc6yQLsVM",
                 "videoUrl": "https://www.youtube.com/watch?v=SgDc6yQLsVM",
                 "title": "Course : Systemverilog Verification 3 : L10.5 : OOPs Example: Writing Env Class",
-                "thumbnailUrl": "https://i.ytimg.com/vi/SgDc6yQLsVM/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvMY&rs=AOn4CLBeFlwiqt_G7PsGb5CBeP5OqKWYjQ",
+                "thumbnailUrl": "https://i.ytimg.com/vi/SgDc6yQLsVM/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDKve3Zmhiplylid5IXb42h2Q2t3w",
                 "playlistId": "PL7q7nkSfmotutQcM9VergQFUpyLs6diJ5",
                 "playlistTitle": "Paid Course : Systemverilog Verification 3 : Object Oriented Programming in SV",
                 "lessonNumber": "L10.5",
@@ -8480,7 +8660,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.3736
+                "titleSimilarity": 0.6182
               }
             }
           ]
@@ -8503,7 +8683,7 @@
                 "videoId": "Ed9Kd-zFIiM",
                 "videoUrl": "https://www.youtube.com/watch?v=Ed9Kd-zFIiM",
                 "title": "Course : Systemverilog Verification 3 : L11.1 :Summary",
-                "thumbnailUrl": "https://i.ytimg.com/vi/Ed9Kd-zFIiM/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvMY&rs=AOn4CLBlaYT_9DoANKawe_WJ-SgPF9pEpw",
+                "thumbnailUrl": "https://i.ytimg.com/vi/Ed9Kd-zFIiM/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCk5hU9Wh5mFWRRNr0g3ylzXYFwyA",
                 "playlistId": "PL7q7nkSfmotutQcM9VergQFUpyLs6diJ5",
                 "playlistTitle": "Paid Course : Systemverilog Verification 3 : Object Oriented Programming in SV",
                 "lessonNumber": "L11.1",
@@ -8528,7 +8708,14 @@
       "subtitle": "",
       "description": "Beginner level course in SoC verification.  Continuation of Course 1",
       "courseImage": "images/course_images/C22_SV_Verif2.jpg",
+      "source": {
+        "kind": "legacy_course"
+      },
       "legacy": {
+        "moduleCount": 8,
+        "lectureCount": 13
+      },
+      "catalog": {
         "moduleCount": 8,
         "lectureCount": 13
       },
@@ -8581,7 +8768,7 @@
               "match": {
                 "status": "matched",
                 "method": "legacy_video_id",
-                "titleSimilarity": 0.28
+                "titleSimilarity": 1.0
               }
             }
           ]
@@ -8973,7 +9160,14 @@
       "subtitle": "",
       "description": "Intermediate level course explaining random constructs in Systemverilog widely used in TB coding & UVM",
       "courseImage": "images/course_images/C24_SV_Verif4.jpg",
+      "source": {
+        "kind": "legacy_course"
+      },
       "legacy": {
+        "moduleCount": 10,
+        "lectureCount": 19
+      },
+      "catalog": {
         "moduleCount": 10,
         "lectureCount": 19
       },
@@ -9039,7 +9233,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.2545
+                "titleSimilarity": 0.1053
               }
             }
           ]
@@ -9479,7 +9673,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.3364
+                "titleSimilarity": 0.507
               }
             },
             {
@@ -9507,7 +9701,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.2927
+                "titleSimilarity": 0.4138
               }
             },
             {
@@ -9535,7 +9729,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.4298
+                "titleSimilarity": 0.6118
               }
             },
             {
@@ -9563,7 +9757,7 @@
               "match": {
                 "status": "matched",
                 "method": "lesson_number",
-                "titleSimilarity": 0.4483
+                "titleSimilarity": 0.65
               }
             }
           ]
@@ -9611,7 +9805,14 @@
       "subtitle": "",
       "description": "Intermediate level course explaining  Simulation Regions like Active, Reactive, NBA etc in Systemverilog",
       "courseImage": "images/course_images/C27_SV_Verif7.jpg",
+      "source": {
+        "kind": "legacy_video_only"
+      },
       "legacy": {
+        "moduleCount": 1,
+        "lectureCount": 1
+      },
+      "catalog": {
         "moduleCount": 1,
         "lectureCount": 1
       },
@@ -9621,7 +9822,7 @@
         "playlistUrl": null,
         "playlistTitle": null,
         "playlistVideoCount": null,
-        "mappingStatus": "video_only_no_exact_playlist",
+        "mappingStatus": "standalone_video_course",
         "mappedLectureCount": 1,
         "missingLectureCount": 0,
         "playlistCandidates": []
@@ -9631,7 +9832,8 @@
         "legacyIndexCorrections": [],
         "missingLectures": [],
         "discrepancies": [
-          "No exact public playlist was found on the channel playlists tab as of 2026-06-20."
+          "No public playlist currently lists this course on the channel playlists tab as of 2026-06-20.",
+          "The course is retained as a standalone public video because the video is still live and relevant."
         ]
       },
       "modules": [
@@ -9678,7 +9880,14 @@
       "subtitle": "",
       "description": "Comprehensive course for SV beginners",
       "courseImage": "images/course_images/C26_SV_Verif6.jpg",
+      "source": {
+        "kind": "legacy_video_only"
+      },
       "legacy": {
+        "moduleCount": 3,
+        "lectureCount": 5
+      },
+      "catalog": {
         "moduleCount": 3,
         "lectureCount": 5
       },
@@ -9688,32 +9897,17 @@
         "playlistUrl": null,
         "playlistTitle": null,
         "playlistVideoCount": null,
-        "mappingStatus": "video_only_no_exact_playlist",
+        "mappingStatus": "curated_video_collection",
         "mappedLectureCount": 5,
         "missingLectureCount": 0,
-        "playlistCandidates": [
-          {
-            "playlistId": "PL7q7nkSfmotuZNz8q_dTqhXY1-rZmIRfP",
-            "playlistTitle": "Systemverilog for Absolute Beginner",
-            "playlistUrl": "https://www.youtube.com/playlist?list=PL7q7nkSfmotuZNz8q_dTqhXY1-rZmIRfP",
-            "playlistVideoCount": 5,
-            "overlapCount": 4,
-            "overlapVideoIds": [
-              "BiCL2WjvoTU",
-              "ZxWn7VhQz0A",
-              "cIlwGFcDLhI",
-              "jj43dXB0i7A"
-            ]
-          }
-        ]
+        "playlistCandidates": []
       },
       "audit": {
         "lectureMatchMethods": {},
         "legacyIndexCorrections": [],
         "missingLectures": [],
         "discrepancies": [
-          "No exact public playlist was found on the channel playlists tab as of 2026-06-20.",
-          "The course overlaps one or more broader public playlists, but none of them are a 1:1 legacy-course match."
+          "No exact public playlist was found on the channel playlists tab as of 2026-06-20."
         ]
       },
       "modules": [
@@ -9871,6 +10065,378 @@
                 "status": "matched",
                 "method": "legacy_video_id",
                 "titleSimilarity": 0.3313
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "courseTag": "YT_ASSERTIONS_PLAYLIST",
+      "slug": "systemverilog-assertions",
+      "title": "Systemverilog Assertions",
+      "subtitle": "",
+      "description": "Short public assertions starter playlist collected from the academy channel.",
+      "courseImage": "",
+      "source": {
+        "kind": "youtube_playlist_only"
+      },
+      "legacy": {
+        "moduleCount": 0,
+        "lectureCount": 0
+      },
+      "catalog": {
+        "moduleCount": 1,
+        "lectureCount": 4
+      },
+      "youtube": {
+        "channelHandle": "@SystemverilogAcademy",
+        "playlistId": "PL7q7nkSfmotsyJxfvQFMyUvjKzOTS47aN",
+        "playlistUrl": "https://www.youtube.com/playlist?list=PL7q7nkSfmotsyJxfvQFMyUvjKzOTS47aN",
+        "playlistTitle": "Systemverilog Assertions",
+        "playlistVideoCount": 4,
+        "mappingStatus": "playlist_only_public_course",
+        "mappedLectureCount": 4,
+        "missingLectureCount": 0,
+        "playlistCandidates": []
+      },
+      "audit": {
+        "lectureMatchMethods": {
+          "playlist_only": 4
+        },
+        "legacyIndexCorrections": [],
+        "missingLectures": [],
+        "discrepancies": []
+      },
+      "modules": [
+        {
+          "index": 1,
+          "title": "Systemverilog Assertions",
+          "lectures": [
+            {
+              "legacyIndex": 1,
+              "positionInModule": 1,
+              "title": "What is an assertion ? Who should write assertion ?",
+              "contentType": "VID",
+              "videoSource": "YOUTUBE",
+              "legacyYoutubeUrl": "",
+              "muxAssetId": "",
+              "muxPlaybackIdPublic": "",
+              "muxPlaybackIdSigned": "",
+              "youtube": {
+                "videoId": "T-6h7857oL4",
+                "videoUrl": "https://www.youtube.com/watch?v=T-6h7857oL4",
+                "title": "Course : Systemverilog Assertions : L2.1-What is an assertion ? Who should write assertion ?",
+                "thumbnailUrl": "https://i.ytimg.com/vi/T-6h7857oL4/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAHhXYxYjmMgz1J7Jc9ftj8YRvz6w",
+                "playlistId": "PL7q7nkSfmotsyJxfvQFMyUvjKzOTS47aN",
+                "playlistTitle": "Systemverilog Assertions",
+                "lessonNumber": "L2.1",
+                "moduleIndex": 2,
+                "lectureIndex": 1,
+                "durationText": "7:46"
+              },
+              "match": {
+                "status": "matched",
+                "method": "playlist_only",
+                "titleSimilarity": 1.0
+              }
+            },
+            {
+              "legacyIndex": 1,
+              "positionInModule": 2,
+              "title": "Types of assertions.",
+              "contentType": "VID",
+              "videoSource": "YOUTUBE",
+              "legacyYoutubeUrl": "",
+              "muxAssetId": "",
+              "muxPlaybackIdPublic": "",
+              "muxPlaybackIdSigned": "",
+              "youtube": {
+                "videoId": "GEGIxYGsFok",
+                "videoUrl": "https://www.youtube.com/watch?v=GEGIxYGsFok",
+                "title": "Course : Systemverilog Assertions : L3.1 : Types of assertions.",
+                "thumbnailUrl": "https://i.ytimg.com/vi/GEGIxYGsFok/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBl8G0hoGBUeR1wCq57gZMxUnFjRQ",
+                "playlistId": "PL7q7nkSfmotsyJxfvQFMyUvjKzOTS47aN",
+                "playlistTitle": "Systemverilog Assertions",
+                "lessonNumber": "L3.1",
+                "moduleIndex": 3,
+                "lectureIndex": 1,
+                "durationText": "3:47"
+              },
+              "match": {
+                "status": "matched",
+                "method": "playlist_only",
+                "titleSimilarity": 1.0
+              }
+            },
+            {
+              "legacyIndex": 3,
+              "positionInModule": 3,
+              "title": "Systemverilog Assertions: S3 - Immediate Assertions & Concurrent Assertions",
+              "contentType": "VID",
+              "videoSource": "YOUTUBE",
+              "legacyYoutubeUrl": "",
+              "muxAssetId": "",
+              "muxPlaybackIdPublic": "",
+              "muxPlaybackIdSigned": "",
+              "youtube": {
+                "videoId": "bcRleGxCL-c",
+                "videoUrl": "https://www.youtube.com/watch?v=bcRleGxCL-c",
+                "title": "Systemverilog Assertions: S3 - Immediate Assertions & Concurrent Assertions",
+                "thumbnailUrl": "https://i.ytimg.com/vi/bcRleGxCL-c/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCvaxlG2a7qmGnJCCf-hdh-3jpDkA",
+                "playlistId": "PL7q7nkSfmotsyJxfvQFMyUvjKzOTS47aN",
+                "playlistTitle": "Systemverilog Assertions",
+                "lessonNumber": null,
+                "moduleIndex": 1,
+                "lectureIndex": 3,
+                "durationText": "12:29"
+              },
+              "match": {
+                "status": "matched",
+                "method": "playlist_only",
+                "titleSimilarity": 1.0
+              }
+            },
+            {
+              "legacyIndex": 4,
+              "positionInModule": 4,
+              "title": "Systemverilog Assertions Examples : Real-time simulation",
+              "contentType": "VID",
+              "videoSource": "YOUTUBE",
+              "legacyYoutubeUrl": "",
+              "muxAssetId": "",
+              "muxPlaybackIdPublic": "",
+              "muxPlaybackIdSigned": "",
+              "youtube": {
+                "videoId": "OWW9pbFJPJU",
+                "videoUrl": "https://www.youtube.com/watch?v=OWW9pbFJPJU",
+                "title": "Systemverilog Assertions Examples : Real-time simulation",
+                "thumbnailUrl": "https://i.ytimg.com/vi/OWW9pbFJPJU/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBCvu1xsA1JZFnIgFJfNn-8KWlimA",
+                "playlistId": "PL7q7nkSfmotsyJxfvQFMyUvjKzOTS47aN",
+                "playlistTitle": "Systemverilog Assertions",
+                "lessonNumber": null,
+                "moduleIndex": 1,
+                "lectureIndex": 4,
+                "durationText": "9:21"
+              },
+              "match": {
+                "status": "matched",
+                "method": "playlist_only",
+                "titleSimilarity": 1.0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "courseTag": "YT_UVM_BEGINNER_PLAYLIST",
+      "slug": "uvm-beginner",
+      "title": "UVM Beginner",
+      "subtitle": "",
+      "description": "Short public UVM starter playlist with beginner-oriented overview videos and reusable-agent previews.",
+      "courseImage": "",
+      "source": {
+        "kind": "youtube_playlist_only"
+      },
+      "legacy": {
+        "moduleCount": 0,
+        "lectureCount": 0
+      },
+      "catalog": {
+        "moduleCount": 1,
+        "lectureCount": 6
+      },
+      "youtube": {
+        "channelHandle": "@SystemverilogAcademy",
+        "playlistId": "PL7q7nkSfmotv_LRRB2fL2LX2DUtn9cztJ",
+        "playlistUrl": "https://www.youtube.com/playlist?list=PL7q7nkSfmotv_LRRB2fL2LX2DUtn9cztJ",
+        "playlistTitle": "UVM Beginner",
+        "playlistVideoCount": 6,
+        "mappingStatus": "playlist_only_public_course",
+        "mappedLectureCount": 6,
+        "missingLectureCount": 0,
+        "playlistCandidates": []
+      },
+      "audit": {
+        "lectureMatchMethods": {
+          "playlist_only": 6
+        },
+        "legacyIndexCorrections": [],
+        "missingLectures": [],
+        "discrepancies": []
+      },
+      "modules": [
+        {
+          "index": 1,
+          "title": "UVM Beginner",
+          "lectures": [
+            {
+              "legacyIndex": 1,
+              "positionInModule": 1,
+              "title": "Introduction to UVM",
+              "contentType": "VID",
+              "videoSource": "YOUTUBE",
+              "legacyYoutubeUrl": "",
+              "muxAssetId": "",
+              "muxPlaybackIdPublic": "",
+              "muxPlaybackIdSigned": "",
+              "youtube": {
+                "videoId": "aUwX6iioHR4",
+                "videoUrl": "https://www.youtube.com/watch?v=aUwX6iioHR4",
+                "title": "Course : UVM in Systemverilog 1: L2.1 : Introduction to UVM",
+                "thumbnailUrl": "https://i.ytimg.com/vi/aUwX6iioHR4/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCWI2gmTKZ_L316wE9I0AVxJARtyA",
+                "playlistId": "PL7q7nkSfmotv_LRRB2fL2LX2DUtn9cztJ",
+                "playlistTitle": "UVM Beginner",
+                "lessonNumber": "L2.1",
+                "moduleIndex": 2,
+                "lectureIndex": 1,
+                "durationText": "3:51"
+              },
+              "match": {
+                "status": "matched",
+                "method": "playlist_only",
+                "titleSimilarity": 1.0
+              }
+            },
+            {
+              "legacyIndex": 1,
+              "positionInModule": 2,
+              "title": "Basic UVM Classes",
+              "contentType": "VID",
+              "videoSource": "YOUTUBE",
+              "legacyYoutubeUrl": "",
+              "muxAssetId": "",
+              "muxPlaybackIdPublic": "",
+              "muxPlaybackIdSigned": "",
+              "youtube": {
+                "videoId": "4TmgfdV1Imk",
+                "videoUrl": "https://www.youtube.com/watch?v=4TmgfdV1Imk",
+                "title": "Course : UVM in Systemverilog 1: L3.1 : Basic UVM Classes",
+                "thumbnailUrl": "https://i.ytimg.com/vi/4TmgfdV1Imk/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCgeZwxLvGp8zad_a3ufwseOZBfsw",
+                "playlistId": "PL7q7nkSfmotv_LRRB2fL2LX2DUtn9cztJ",
+                "playlistTitle": "UVM Beginner",
+                "lessonNumber": "L3.1",
+                "moduleIndex": 3,
+                "lectureIndex": 1,
+                "durationText": "9:41"
+              },
+              "match": {
+                "status": "matched",
+                "method": "playlist_only",
+                "titleSimilarity": 1.0
+              }
+            },
+            {
+              "legacyIndex": 1,
+              "positionInModule": 3,
+              "title": "Writing UVM Classes in general",
+              "contentType": "VID",
+              "videoSource": "YOUTUBE",
+              "legacyYoutubeUrl": "",
+              "muxAssetId": "",
+              "muxPlaybackIdPublic": "",
+              "muxPlaybackIdSigned": "",
+              "youtube": {
+                "videoId": "Aa64n-woB-Q",
+                "videoUrl": "https://www.youtube.com/watch?v=Aa64n-woB-Q",
+                "title": "Course : UVM in Systemverilog 1: L5.1: Writing UVM Classes in general",
+                "thumbnailUrl": "https://i.ytimg.com/vi/Aa64n-woB-Q/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLD4PO-uQdqmWNhIE8qRIpOyys2UYw",
+                "playlistId": "PL7q7nkSfmotv_LRRB2fL2LX2DUtn9cztJ",
+                "playlistTitle": "UVM Beginner",
+                "lessonNumber": "L5.1",
+                "moduleIndex": 5,
+                "lectureIndex": 1,
+                "durationText": "11:24"
+              },
+              "match": {
+                "status": "matched",
+                "method": "playlist_only",
+                "titleSimilarity": 1.0
+              }
+            },
+            {
+              "legacyIndex": 1,
+              "positionInModule": 4,
+              "title": "Concept of Reusable UVM Agents & General Structure",
+              "contentType": "VID",
+              "videoSource": "YOUTUBE",
+              "legacyYoutubeUrl": "",
+              "muxAssetId": "",
+              "muxPlaybackIdPublic": "",
+              "muxPlaybackIdSigned": "",
+              "youtube": {
+                "videoId": "8jEPok0kd1U",
+                "videoUrl": "https://www.youtube.com/watch?v=8jEPok0kd1U",
+                "title": "Course : UVM in Systemverilog 2 : L3.1 : Concept of Reusable UVM Agents & General Structure",
+                "thumbnailUrl": "https://i.ytimg.com/vi/8jEPok0kd1U/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBtkeIbi_elpUclRHHK3G3oh5Itvw",
+                "playlistId": "PL7q7nkSfmotv_LRRB2fL2LX2DUtn9cztJ",
+                "playlistTitle": "UVM Beginner",
+                "lessonNumber": "L3.1",
+                "moduleIndex": 3,
+                "lectureIndex": 1,
+                "durationText": "10:00"
+              },
+              "match": {
+                "status": "matched",
+                "method": "playlist_only",
+                "titleSimilarity": 1.0
+              }
+            },
+            {
+              "legacyIndex": 5,
+              "positionInModule": 5,
+              "title": "UVM Basics: Block diagram of a Complete AXI Agent in UVM",
+              "contentType": "VID",
+              "videoSource": "YOUTUBE",
+              "legacyYoutubeUrl": "",
+              "muxAssetId": "",
+              "muxPlaybackIdPublic": "",
+              "muxPlaybackIdSigned": "",
+              "youtube": {
+                "videoId": "3SavrOtJd8I",
+                "videoUrl": "https://www.youtube.com/watch?v=3SavrOtJd8I",
+                "title": "UVM Basics: Block diagram of a Complete AXI Agent in UVM",
+                "thumbnailUrl": "https://i.ytimg.com/vi/3SavrOtJd8I/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDAn8eJsn3B2ZET7FHmUEi0vZm39g",
+                "playlistId": "PL7q7nkSfmotv_LRRB2fL2LX2DUtn9cztJ",
+                "playlistTitle": "UVM Beginner",
+                "lessonNumber": null,
+                "moduleIndex": 1,
+                "lectureIndex": 5,
+                "durationText": "6:09"
+              },
+              "match": {
+                "status": "matched",
+                "method": "playlist_only",
+                "titleSimilarity": 1.0
+              }
+            },
+            {
+              "legacyIndex": 6,
+              "positionInModule": 6,
+              "title": "VLSI Verification Courses: Udemy : UVM in Systemverilog: Quick Start for Absolute Beginner : Part 1",
+              "contentType": "VID",
+              "videoSource": "YOUTUBE",
+              "legacyYoutubeUrl": "",
+              "muxAssetId": "",
+              "muxPlaybackIdPublic": "",
+              "muxPlaybackIdSigned": "",
+              "youtube": {
+                "videoId": "uqNbVuuaw9w",
+                "videoUrl": "https://www.youtube.com/watch?v=uqNbVuuaw9w",
+                "title": "VLSI Verification Courses: Udemy : UVM in Systemverilog: Quick Start for Absolute Beginner : Part 1",
+                "thumbnailUrl": "https://i.ytimg.com/vi/uqNbVuuaw9w/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAjG1WZoyierdDFm7TBR3a8pxxbnQ",
+                "playlistId": "PL7q7nkSfmotv_LRRB2fL2LX2DUtn9cztJ",
+                "playlistTitle": "UVM Beginner",
+                "lessonNumber": null,
+                "moduleIndex": 1,
+                "lectureIndex": 6,
+                "durationText": "26:09"
+              },
+              "match": {
+                "status": "matched",
+                "method": "playlist_only",
+                "titleSimilarity": 1.0
               }
             }
           ]

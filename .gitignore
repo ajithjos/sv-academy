@@ -34,9 +34,9 @@ yarn-error.log*
 
 # local deployment overrides
 /deploy/cloudrun/local/
-/dev/env/local.env
-/dev/site_root/
-/dev/scratchpad/
+dev/env/local.env
+dev/site_root/
+dev/scratchpad/
 
 # vercel
 .vercel
@@ -51,3 +51,30 @@ next-env.d.ts
 
 # IDEs
 .vscode/
+
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+#lib/ # `lib` is the `src` of flutter
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+*.whl
+# testing/coverage
+.coverage
