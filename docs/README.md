@@ -18,8 +18,8 @@ Future docs should be added when the product grows real contracts: content model
 ## Local Development
 
 ```bash
-make install-dev
-make dev
+make setup
+make dev-up
 ```
 
 Open `http://127.0.0.1:3022`.
@@ -32,13 +32,13 @@ make check
 
 ## Deployment
 
-The current deployment target is Cloud Run with a standalone Next.js container:
+The current deployment target is Cloud Run with a standalone Next.js container. The tracked GCP contract lives in `deploy/config/environments/prod.gcp.env`, and deploy commands fail fast when the active `gcloud` config, project, or account does not match it.
 
 ```bash
-export GCP_PROJECT_ID="your-gcp-project"
-export IMAGE_TAG="$(git rev-parse --short HEAD)"
-make cloudrun-deploy-plan
-make cloudrun-deploy
+make context
+make doctor
+make deploy-plan
+make deploy
 ```
 
 See `deploy/cloudrun/README.md`.

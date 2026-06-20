@@ -1,22 +1,35 @@
 SHELL := /bin/bash
 
 DEV_APP_PORT ?= 3022
-GCP_PROJECT_ID ?=
-CLOUD_RUN_REGION ?= us-central1
-CLOUD_RUN_SERVICE ?= systemverilog-academy
-IMAGE_NAME ?= systemverilog-academy-web
-IMAGE_TAG ?= manual
+DEPLOY_ENV_FILE ?= deploy/config/environments/prod.gcp.env
+IMAGE_TAG ?= $(shell git rev-parse --short HEAD 2>/dev/null || echo manual)
 
-.PHONY: help install-dev dev build start lint typecheck format format-check check docker-build cloudrun-deploy cloudrun-deploy-plan
+.PHONY: help context doctor setup pc dev-clean dev-clean-all dev-up build start lint typecheck format format-check check docker-build deploy-plan deploy
 
 help:
-	@echo "Common targets: install-dev, dev, build, check"
-	@echo "Deploy targets: docker-build, cloudrun-deploy-plan, cloudrun-deploy"
+	@cat dev/help.md
 
-install-dev:
+context:
+	@cat dev/context.md
+	@echo
+	@DEPLOY_ENV_FILE="$(DEPLOY_ENV_FILE)" IMAGE_TAG="$(IMAGE_TAG)" bash deploy/cloudrun/deploy.sh context
+
+doctor:
+	@DEPLOY_ENV_FILE="$(DEPLOY_ENV_FILE)" IMAGE_TAG="$(IMAGE_TAG)" bash deploy/cloudrun/deploy.sh doctor
+
+setup:
 	npm install
 
-dev:
+pc:
+	bash dev/lib/clean.sh python
+
+dev-clean:
+	bash dev/lib/clean.sh routine
+
+dev-clean-all:
+	bash dev/lib/clean.sh all
+
+dev-up:
 	npm run dev -- --hostname 127.0.0.1 --port $(DEV_APP_PORT)
 
 build:
@@ -40,10 +53,10 @@ format-check:
 check: lint typecheck build
 
 docker-build:
-	docker build -t $(IMAGE_NAME):$(IMAGE_TAG) .
+	DEPLOY_ENV_FILE="$(DEPLOY_ENV_FILE)" IMAGE_TAG="$(IMAGE_TAG)" bash deploy/cloudrun/deploy.sh docker-build
 
-cloudrun-deploy-plan:
-	bash deploy/cloudrun/deploy.sh --plan
+deploy-plan:
+	DEPLOY_ENV_FILE="$(DEPLOY_ENV_FILE)" IMAGE_TAG="$(IMAGE_TAG)" bash deploy/cloudrun/deploy.sh plan
 
-cloudrun-deploy:
-	bash deploy/cloudrun/deploy.sh
+deploy:
+	DEPLOY_ENV_FILE="$(DEPLOY_ENV_FILE)" IMAGE_TAG="$(IMAGE_TAG)" bash deploy/cloudrun/deploy.sh deploy

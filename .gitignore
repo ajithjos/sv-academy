@@ -32,6 +32,11 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+# local deployment overrides
+/deploy/cloudrun/local/
+/dev/local/
+/dev/scratchpad/
+
 # vercel
 .vercel
 

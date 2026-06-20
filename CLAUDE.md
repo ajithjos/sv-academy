@@ -9,6 +9,7 @@ This is the new SystemVerilog Academy repository. The legacy Django platform rem
 - The active product is a public Next.js landing page.
 - There is no authentication, database, student workspace, instructor surface, or course runtime yet.
 - Cloud Run is the current deployment target.
+- Cloud Run deploys must use the tracked GCP contract in `deploy/config/environments/prod.gcp.env`; run `make doctor` before `make deploy` when credentials or projects may have changed.
 - YouTube is the current content delivery surface.
 
 ## Engineering Rules

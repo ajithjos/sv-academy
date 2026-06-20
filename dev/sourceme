@@ -1,0 +1,36 @@
+# shellcheck shell=bash
+
+if [ -n "${ZSH_VERSION:-}" ]; then
+	SCRIPT_PATH="${(%):-%x}"
+else
+	SCRIPT_PATH="${BASH_SOURCE[0]:-$0}"
+fi
+
+DEV_DIR="$(cd "$(dirname "$SCRIPT_PATH")" >/dev/null 2>&1 && pwd)"
+REPO_ROOT="$(cd "$DEV_DIR/.." >/dev/null 2>&1 && pwd)"
+
+export SVACADEMY_REPO_ROOT="$REPO_ROOT"
+
+dev_source_env_file() {
+	local file="$1"
+	[ -f "$file" ] || return 0
+	set -a
+	. "$file"
+	set +a
+}
+
+dev_source_env_file "$DEV_DIR/env/default.env"
+dev_source_env_file "$DEV_DIR/local/env"
+
+case ":$PATH:" in
+	*":$REPO_ROOT/node_modules/.bin:"*) ;;
+	*) export PATH="$REPO_ROOT/node_modules/.bin:$PATH" ;;
+esac
+
+pc() {
+	(cd "$REPO_ROOT" && make pc)
+}
+
+echo
+echo "Set repo_root as: $SVACADEMY_REPO_ROOT"
+echo "Use: make dev-up"

@@ -1,10 +1,31 @@
-# GitHub Copilot Instructions
+---
+applyTo: '**'
+---
 
-This repository is the clean rebuild of SystemVerilog Academy.
+This is the new SystemVerilog Academy repository. The legacy Django platform remains useful for archaeology, but this repo should not mechanically copy its shape.
 
-- Treat the current app as a public Next.js landing page.
-- Do not add authentication, database, dashboard, course runtime, or instructor/student workflows unless requested.
-- Keep public copy in `src/content/`.
-- Keep UI components in `src/components/`.
-- Keep deployment changes under `deploy/` and document command changes.
-- Prefer focused changes that keep `make check` passing.
+## Current Contract
+
+- The active product is a public Next.js landing page.
+- There is no authentication, database, student workspace, instructor surface, or course runtime yet.
+- Cloud Run is the current deployment target.
+- Cloud Run deploys must use the tracked GCP contract in `deploy/config/environments/prod.gcp.env`; run `make doctor` before `make deploy` when credentials or projects may have changed.
+- YouTube is the current content delivery surface.
+
+## Engineering Rules
+
+- Keep the public frontend simple and explicit.
+- Put editable public copy in `src/content/` rather than burying it inside layout code.
+- Add backend, auth, persistence, and course-platform concepts only when there is a real product requirement.
+- Prefer small deploy scripts and `make` targets that can be run locally.
+- Keep docs current when repository structure, deployment, or product contracts change.
+
+## Validation
+
+Run this before handing off non-trivial changes:
+
+```bash
+make check
+```
+
+For visual changes, also run the site locally and inspect desktop and mobile widths.
