@@ -1,10 +1,9 @@
 # Developer Layer
 
-This directory holds repo-local developer ergonomics only. Product deployment inputs stay under `deploy/`.
+This directory holds repo-local developer ergonomics. Product runtime and deployment inputs stay in their product-owned directories.
 
-- Source local shell helpers with `source dev/sourceme`.
-- Inspect the command surface with `make help` or by reading `dev/help.md`.
-- Inspect the current repo mental model with `make context` or by reading `dev/context.md`.
-- Use `dev/lib/gcloud.sh` for guarded Cloud Run deployment preflight.
-- Use `dev/lib/clean.sh` through `make pc`, `make dev-clean`, or `make dev-clean-all`.
-- Use ignored `dev/scratchpad/` for ad hoc developer notes, experiments, and temporary files that are not product runtime state.
+- Source shell helpers with `source dev/sourceme`.
+- Use `make context` for the repo command map and live status. `make help` aliases `make context`.
+- Use `make doctor` for local prerequisite and deployment-identity checks.
+- Use `make clean`, `make clean-python`, `make clean-all`, or `make clean-deps` for cleanup.
+- Put optional machine-local shell overrides in ignored `dev/env/local.env`.

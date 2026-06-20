@@ -67,28 +67,34 @@ clean_all() {
 		-path './*/.venv' -prune -o \
 		-type d \( -name '*.egg-info' -o -name '*.egg' -o -name .eggs \) -prune -exec rm -rf {} +
 
-	if [[ "${DEV_CLEAN_INCLUDE_DEPS:-0}" == "1" ]]; then
-		remove_path .venv
-		remove_path node_modules
-		remove_path rust/target
-		remove_path target
-	fi
+}
+
+clean_deps() {
+	clean_all
+	remove_path .venv
+	remove_path node_modules
+	remove_path rust/target
+	remove_path target
+	find . -maxdepth 4 -type d \( -name node_modules -o -name .venv \) -prune -exec rm -rf {} +
 }
 
 case "$MODE" in
-	python|pc)
+	python)
 		clean_python
 		;;
-	routine|dev)
+	routine|dev|clean)
 		clean_routine
 		;;
 	all|aggressive)
 		clean_all
 		;;
+	deps|dependencies)
+		clean_deps
+		;;
 	*)
-		echo "Usage: dev/lib/clean.sh {python|routine|all}" >&2
+		echo "Usage: dev/lib/clean.sh {python|routine|all|deps}" >&2
 		exit 2
 		;;
 esac
 
-echo "[dev-clean] Completed $MODE cleanup in $REPO_ROOT"
+echo "[clean] Completed $MODE cleanup in $REPO_ROOT"

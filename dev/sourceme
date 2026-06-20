@@ -20,16 +20,12 @@ dev_source_env_file() {
 }
 
 dev_source_env_file "$DEV_DIR/env/default.env"
-dev_source_env_file "$DEV_DIR/local/env"
+dev_source_env_file "$DEV_DIR/env/local.env"
 
 case ":$PATH:" in
 	*":$REPO_ROOT/node_modules/.bin:"*) ;;
 	*) export PATH="$REPO_ROOT/node_modules/.bin:$PATH" ;;
 esac
-
-pc() {
-	(cd "$REPO_ROOT" && make pc)
-}
 
 echo
 echo "Set repo_root as: $SVACADEMY_REPO_ROOT"
