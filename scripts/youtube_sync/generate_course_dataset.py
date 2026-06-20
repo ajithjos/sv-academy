@@ -729,6 +729,160 @@ def build_course_record(
     }
 
 
+def build_mux_payload(
+    *,
+    asset_id: str,
+    playback_id_public: str,
+    playback_id_signed: str,
+) -> dict[str, Any] | None:
+    if not any([asset_id, playback_id_public, playback_id_signed]):
+        return None
+
+    return {
+        "assetId": asset_id or None,
+        "playbackIdPublic": playback_id_public or None,
+        "playbackIdSigned": playback_id_signed or None,
+    }
+
+
+def build_youtube_payload(youtube: dict[str, Any] | None) -> dict[str, Any] | None:
+    if not youtube:
+        return None
+
+    return {
+        "videoId": youtube.get("videoId"),
+        "url": youtube.get("videoUrl"),
+        "title": youtube.get("title"),
+        "thumbnailUrl": youtube.get("thumbnailUrl"),
+        "playlistId": youtube.get("playlistId"),
+        "playlistTitle": clean_course_title(youtube.get("playlistTitle"))
+        if youtube.get("playlistTitle")
+        else None,
+        "lessonNumber": youtube.get("lessonNumber"),
+        "moduleIndex": youtube.get("moduleIndex"),
+        "lessonIndex": youtube.get("lectureIndex"),
+        "durationText": youtube.get("durationText"),
+    }
+
+
+def transform_lesson_record(lecture: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "index": lecture["positionInModule"],
+        "title": lecture["title"],
+        "kind": "video" if lecture.get("contentType") == "VID" else lecture.get("contentType"),
+        "youtube": build_youtube_payload(lecture.get("youtube")),
+        "mux": build_mux_payload(
+            asset_id=lecture.get("muxAssetId", ""),
+            playback_id_public=lecture.get("muxPlaybackIdPublic", ""),
+            playback_id_signed=lecture.get("muxPlaybackIdSigned", ""),
+        ),
+        "metadata": {
+            "legacy": {
+                "lectureIndex": lecture.get("legacyIndex"),
+                "youtubeUrl": lecture.get("legacyYoutubeUrl") or None,
+                "contentType": lecture.get("contentType") or None,
+                "videoSource": lecture.get("videoSource") or None,
+            },
+            "sync": {
+                "status": lecture["match"].get("status"),
+                "method": lecture["match"].get("method"),
+                "titleSimilarity": lecture["match"].get("titleSimilarity"),
+            },
+        },
+    }
+
+
+def transform_module_record(module: dict[str, Any]) -> dict[str, Any]:
+    lessons = [transform_lesson_record(lecture) for lecture in module["lectures"]]
+    return {
+        "index": module["index"],
+        "slug": slugify(module["title"]),
+        "title": module["title"],
+        "lessonCount": len(lessons),
+        "lessons": lessons,
+    }
+
+
+def transform_course_record(course: dict[str, Any]) -> dict[str, Any]:
+    modules = [transform_module_record(module) for module in course["modules"]]
+
+    return {
+        "id": course["courseTag"],
+        "slug": course["slug"],
+        "title": course["title"],
+        "subtitle": course["subtitle"],
+        "description": course["description"],
+        "image": course["courseImage"],
+        "counts": {
+            "modules": course["catalog"]["moduleCount"],
+            "lessons": course["catalog"]["lectureCount"],
+        },
+        "youtube": {
+            "channelHandle": course["youtube"]["channelHandle"],
+            "playlistId": course["youtube"]["playlistId"],
+            "playlistUrl": course["youtube"]["playlistUrl"],
+            "playlistTitle": clean_course_title(course["youtube"]["playlistTitle"])
+            if course["youtube"]["playlistTitle"]
+            else None,
+            "playlistVideoCount": course["youtube"]["playlistVideoCount"],
+        },
+        "modules": modules,
+        "metadata": {
+            "source": {
+                **course["source"],
+                "legacyTag": course["courseTag"],
+                "legacyCounts": {
+                    "modules": course["legacy"]["moduleCount"],
+                    "lessons": course["legacy"]["lectureCount"],
+                },
+            },
+            "sync": {
+                "mappingStatus": course["youtube"]["mappingStatus"],
+                "mappedLessonCount": course["youtube"]["mappedLectureCount"],
+                "missingLessonCount": course["youtube"]["missingLectureCount"],
+                "playlistCandidates": course["youtube"]["playlistCandidates"],
+                "indexCorrections": course["audit"]["legacyIndexCorrections"],
+                "missingLessons": course["audit"]["missingLectures"],
+                "discrepancies": course["audit"]["discrepancies"],
+            },
+        },
+    }
+
+
+def transform_summary(summary: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "legacySourceCourseCount": summary["legacySourceCourseCount"],
+        "legacySourceModuleCount": summary["legacySourceModuleCount"],
+        "legacySourceLessonCount": summary["legacySourceLectureCount"],
+        "catalogCourseCount": summary["catalogCourseCount"],
+        "catalogModuleCount": summary["catalogModuleCount"],
+        "catalogLessonCount": summary["catalogLectureCount"],
+        "mappedLessonCount": summary["mappedLectureCount"],
+        "missingLessonCount": summary["missingLectureCount"],
+        "exactPlaylistCourseCount": summary["exactPlaylistCourseCount"],
+        "playlistWithMissingLessonCourseCount": summary[
+            "playlistWithMissingLectureCourseCount"
+        ],
+        "noExactPlaylistCourseCount": summary["noExactPlaylistCourseCount"],
+        "unmappedChannelPlaylistCount": summary["unmappedChannelPlaylistCount"],
+        "supplementalChannelPlaylistCount": summary[
+            "supplementalChannelPlaylistCount"
+        ],
+    }
+
+
+def transform_playlist_list(playlists: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    return [
+        {
+            "id": playlist["playlistId"],
+            "title": clean_course_title(playlist["playlistTitle"]),
+            "url": playlist["playlistUrl"],
+            "videoCount": playlist["playlistVideoCount"],
+        }
+        for playlist in playlists
+    ]
+
+
 def playlist_overlap_candidates(
     direct_video_ids: list[str],
     channel_playlists: dict[str, dict[str, Any]],
@@ -1193,39 +1347,54 @@ def generate_dataset(
         not in {course["youtube"]["playlistId"] for course in course_records if course["youtube"]["playlistId"]}
     ]
 
-    dataset = {
-        "generatedAt": datetime.now(UTC).isoformat().replace("+00:00", "Z"),
-        "snapshotDate": snapshot_date,
-        "source": {
-            "legacyCourseFile": str(legacy_file),
-            "youtubeChannel": {
-                "handle": YOUTUBE_CHANNEL_HANDLE,
-                "channelUrl": YOUTUBE_CHANNEL_URL,
-                "playlistIndexUrl": YOUTUBE_PLAYLISTS_URL,
-                "playlistCountDiscovered": len(channel_playlists),
-            },
-        },
-        "summary": {
-            "legacySourceCourseCount": source_legacy_course_count,
-            "legacySourceModuleCount": source_legacy_module_count,
-            "legacySourceLectureCount": source_legacy_lecture_count,
-            "catalogCourseCount": len(course_records),
-            "catalogModuleCount": catalog_module_count,
-            "catalogLectureCount": catalog_lecture_count,
-            "mappedLectureCount": mapped_lecture_count,
-            "missingLectureCount": missing_lecture_count,
-            "exactPlaylistCourseCount": exact_playlist_courses,
-            "playlistWithMissingLectureCourseCount": partial_playlist_courses,
-            "noExactPlaylistCourseCount": no_exact_playlist_courses,
-            "unmappedChannelPlaylistCount": len(unmapped_channel_playlists),
-            "supplementalChannelPlaylistCount": len(supplemental_channel_playlists),
-        },
-        "supplementalChannelPlaylists": supplemental_channel_playlists,
-        "unmappedChannelPlaylists": unmapped_channel_playlists,
-        "courses": course_records,
+    summary = {
+        "legacySourceCourseCount": source_legacy_course_count,
+        "legacySourceModuleCount": source_legacy_module_count,
+        "legacySourceLectureCount": source_legacy_lecture_count,
+        "catalogCourseCount": len(course_records),
+        "catalogModuleCount": catalog_module_count,
+        "catalogLectureCount": catalog_lecture_count,
+        "mappedLectureCount": mapped_lecture_count,
+        "missingLectureCount": missing_lecture_count,
+        "exactPlaylistCourseCount": exact_playlist_courses,
+        "playlistWithMissingLectureCourseCount": partial_playlist_courses,
+        "noExactPlaylistCourseCount": no_exact_playlist_courses,
+        "unmappedChannelPlaylistCount": len(unmapped_channel_playlists),
+        "supplementalChannelPlaylistCount": len(supplemental_channel_playlists),
     }
 
-    report = build_audit_report(dataset)
+    dataset = {
+        "metadata": {
+            "generatedAt": datetime.now(UTC).isoformat().replace("+00:00", "Z"),
+            "snapshotDate": snapshot_date,
+            "generator": {
+                "script": "scripts/youtube_sync/generate_course_dataset.py",
+            },
+            "source": {
+                "legacyCourseFile": str(legacy_file),
+                "youtubeChannel": {
+                    "handle": YOUTUBE_CHANNEL_HANDLE,
+                    "channelUrl": YOUTUBE_CHANNEL_URL,
+                    "playlistIndexUrl": YOUTUBE_PLAYLISTS_URL,
+                    "playlistCountDiscovered": len(channel_playlists),
+                },
+            },
+            "summary": transform_summary(summary),
+            "supplementalPlaylists": transform_playlist_list(supplemental_channel_playlists),
+            "unmappedPlaylists": transform_playlist_list(unmapped_channel_playlists),
+        },
+        "courses": [transform_course_record(course) for course in course_records],
+    }
+
+    report = build_audit_report(
+        {
+            "snapshotDate": snapshot_date,
+            "summary": summary,
+            "supplementalChannelPlaylists": supplemental_channel_playlists,
+            "unmappedChannelPlaylists": unmapped_channel_playlists,
+            "courses": course_records,
+        }
+    )
     return dataset, report
 
 
