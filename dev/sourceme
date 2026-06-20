@@ -11,27 +11,17 @@ REPO_ROOT="$(cd "$DEV_DIR/.." >/dev/null 2>&1 && pwd)"
 
 export SVACADEMY_REPO_ROOT="$REPO_ROOT"
 
-dev_source_env_file() {
-	local file="$1"
-	[ -f "$file" ] || return 0
-	set -a
-	. "$file"
-	set +a
-}
+DEVKIT_SOURCEME="$REPO_ROOT/dev/devkit/lib/sourceme.sh"
+if [ ! -f "$DEVKIT_SOURCEME" ]; then
+	echo "Missing devkit submodule. Run: git submodule update --init dev/devkit" >&2
+	return 1
+fi
+# shellcheck source=dev/devkit/lib/sourceme.sh
+source "$DEVKIT_SOURCEME" || return $?
 
-dev_source_env_file "$DEV_DIR/env/default.env"
-dev_source_env_file "$DEV_DIR/env/local.env"
-
-mkdir -p \
-	"$REPO_ROOT/dev/site_root" \
-	"$REPO_ROOT/dev/scratchpad/tmp" \
-	"$REPO_ROOT/dev/scratchpad/playground" \
-	"$REPO_ROOT/dev/scratchpad/shipment"
-
-case ":$PATH:" in
-	*":$REPO_ROOT/node_modules/.bin:"*) ;;
-	*) export PATH="$REPO_ROOT/node_modules/.bin:$PATH" ;;
-esac
+devkit_source_dev_env "$DEV_DIR"
+devkit_scaffold_dev_dirs "$REPO_ROOT"
+devkit_prepend_path "$REPO_ROOT/node_modules/.bin"
 
 echo
 echo "Set repo_root as: $SVACADEMY_REPO_ROOT"

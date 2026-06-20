@@ -6,38 +6,45 @@ IMAGE_TAG ?= $(shell git rev-parse --short HEAD 2>/dev/null || echo manual)
 
 LEGACY_COURSES ?=
 
-.PHONY: help context doctor setup submodules-master submodules-master-check clean clean-python clean-all clean-deps dev-up build start lint typecheck format format-check check course-dataset docker-build deploy-plan deploy
+.PHONY: help context doctor setup devkit-bootstrap submodules-master submodules-master-check clean clean-python clean-all clean-deps dev-up build start lint typecheck format format-check check course-dataset docker-build deploy-plan deploy
+
+DEVKIT_MAKE := $(MAKE) --no-print-directory -C dev/devkit REPO_ROOT=$(CURDIR)
 
 help: context
 
-context:
-	@cat dev/repo-info.md
+devkit-bootstrap:
+	@if [ ! -f dev/devkit/Makefile ]; then git submodule update --init -- dev/devkit; fi
+
+context: devkit-bootstrap
+	@$(DEVKIT_MAKE) context
 	@echo
 	@DEPLOY_ENV_FILE="$(DEPLOY_ENV_FILE)" IMAGE_TAG="$(IMAGE_TAG)" bash deploy/cloudrun/deploy.sh context
 
-doctor:
+doctor: devkit-bootstrap
+	@$(DEVKIT_MAKE) doctor
 	@DEPLOY_ENV_FILE="$(DEPLOY_ENV_FILE)" IMAGE_TAG="$(IMAGE_TAG)" bash deploy/cloudrun/deploy.sh doctor
 
-setup:
+setup: devkit-bootstrap
+	$(DEVKIT_MAKE) setup
 	npm install
 
-submodules-master:
-	bash dev/lib/submodules.sh sync
+submodules-master: devkit-bootstrap
+	$(DEVKIT_MAKE) submodules-master
 
-submodules-master-check:
-	bash dev/lib/submodules.sh check
+submodules-master-check: devkit-bootstrap
+	$(DEVKIT_MAKE) submodules-master-check
 
-clean:
-	bash dev/lib/clean.sh routine
+clean: devkit-bootstrap
+	$(DEVKIT_MAKE) clean
 
-clean-python:
-	bash dev/lib/clean.sh python
+clean-python: devkit-bootstrap
+	$(DEVKIT_MAKE) clean-python
 
-clean-all:
-	bash dev/lib/clean.sh all
+clean-all: devkit-bootstrap
+	$(DEVKIT_MAKE) clean-all
 
-clean-deps:
-	bash dev/lib/clean.sh deps
+clean-deps: devkit-bootstrap
+	$(DEVKIT_MAKE) clean-deps
 
 dev-up:
 	npm run dev -- --hostname 127.0.0.1 --port $(DEV_APP_PORT)

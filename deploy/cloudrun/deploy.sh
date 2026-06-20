@@ -10,8 +10,8 @@ MODE="${1:-deploy}"
 IMAGE_TAG="${IMAGE_TAG:-$(git -C "$REPO_ROOT" rev-parse --short HEAD 2>/dev/null || echo manual)}"
 DEPLOY_ALLOW_DIRTY="${DEPLOY_ALLOW_DIRTY:-0}"
 
-# shellcheck source=../../dev/lib/gcloud.sh
-source "$REPO_ROOT/dev/lib/gcloud.sh"
+# shellcheck source=../../dev/devkit/lib/gcloud.sh
+source "$REPO_ROOT/dev/devkit/lib/gcloud.sh"
 
 require_cmd() {
   local cmd="$1"
