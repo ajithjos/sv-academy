@@ -93,27 +93,29 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="tracks" className="track-section" aria-labelledby="tracks-title">
-        <div className="section-heading">
-          <div>
-            <p className="eyebrow dark">Learning tracks</p>
-            <h2 id="tracks-title">A practical path through design and verification.</h2>
+      <div className="section-bg-alt">
+        <section id="tracks" className="track-section" aria-labelledby="tracks-title">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow dark">Learning tracks</p>
+              <h2 id="tracks-title">A practical path through design and verification.</h2>
+            </div>
+            <p>
+              Start with the basics, then build toward RTL coding, verification, assertions, and
+              UVM. The catalog keeps those paths separate enough to browse quickly.
+            </p>
           </div>
-          <p>
-            Start with the basics, then build toward RTL coding, verification, assertions, and UVM.
-            The catalog keeps those paths separate enough to browse quickly.
-          </p>
-        </div>
-        <div className="feature-grid">
-          {learningTracks.map((item) => (
-            <article className="feature-card" key={item.title}>
-              <item.icon aria-hidden="true" />
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
-            </article>
-          ))}
-        </div>
-      </section>
+          <div className="feature-grid">
+            {learningTracks.map((item) => (
+              <article className="feature-card" key={item.title}>
+                <item.icon aria-hidden="true" />
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      </div>
 
       <section className="relaunch-section" aria-labelledby="relaunch-title">
         <p className="eyebrow dark">Relaunch note</p>
