@@ -8,6 +8,12 @@ MODE="${1:-deploy}"
 IMAGE_TAG="${IMAGE_TAG:-$(git -C "$REPO_ROOT" rev-parse --short HEAD 2>/dev/null || echo manual)}"
 DEPLOY_ALLOW_DIRTY="${DEPLOY_ALLOW_DIRTY:-0}"
 CLOUD_RUN_DEPLOY_FLAGS=()
+REQUIRED_PROJECT_SERVICES=(
+  run.googleapis.com
+  cloudbuild.googleapis.com
+  artifactregistry.googleapis.com
+  iam.googleapis.com
+)
 
 # shellcheck source=../../dev/devkit/lib/gcloud.sh
 source "$REPO_ROOT/dev/devkit/lib/gcloud.sh"
@@ -163,12 +169,25 @@ confirm_deploy() {
 }
 
 enable_project_services() {
-  gcloud services enable \
-    run.googleapis.com \
-    cloudbuild.googleapis.com \
-    artifactregistry.googleapis.com \
-    iam.googleapis.com \
-    --project "$GCP_PROJECT_ID"
+  gcloud services enable "${REQUIRED_PROJECT_SERVICES[@]}" --project "$GCP_PROJECT_ID"
+}
+
+check_project_services_enabled() {
+  local service
+  local missing=()
+
+  for service in "${REQUIRED_PROJECT_SERVICES[@]}"; do
+    if [[ "$(gcloud services list --enabled --project "$GCP_PROJECT_ID" --filter="config.name=$service" --format='value(config.name)' 2>/dev/null | head -n 1)" != "$service" ]]; then
+      missing+=("$service")
+    fi
+  done
+
+  if (( ${#missing[@]} > 0 )); then
+    echo "[deploy/cloudrun] ERROR: required GCP APIs are not enabled for '$GCP_PROJECT_ID':" >&2
+    printf "[deploy/cloudrun]   %s\n" "${missing[@]}" >&2
+    echo "[deploy/cloudrun] Run first: make deploy-bootstrap" >&2
+    exit 6
+  fi
 }
 
 ensure_runtime_service_account() {
@@ -194,6 +213,7 @@ ensure_artifact_repo() {
 }
 
 deploy() {
+  check_project_services_enabled
   ensure_runtime_service_account
   ensure_artifact_repo
   gcloud builds submit --project "$GCP_PROJECT_ID" --tag "$IMAGE_URI" "$REPO_ROOT"
