@@ -3,22 +3,23 @@
   --ink-soft: #374151;
   --paper: #fbfaf7;
   --paper-strong: #ffffff;
-  --paper-warm: #f5efe7;
+  --paper-warm: #f7f0e2;
   --line: #ddd8ce;
-  --amber: #bd7a16;
-  --amber-dark: #8f5a10;
+  --amber: #d89b22;
+  --amber-dark: #9a6412;
   /*
-    Brand red options:
-    - Current muted garnet: #9e3438 / #82282e / #5f1b22
-    - Deeper oxblood: #8a2d34 / #70222a / #4f171e
-    - Softer graphite red: #944044 / #793238 / #5a252b
-    - Warmer brick red: #a6473e / #87362f / #62231f
+    Brand palette options:
+    - Current warm academy: #b84a42 / #963933 / #6f2725 with #d89b22 amber
+    - Earlier red commit: #c6474b / #943034 with #bd7a16 amber
+    - Earlier golden commit: #c6474b / #943034 with #e0a323 amber
+    - Muted garnet: #9e3438 / #82282e / #5f1b22 with #bd7a16 amber
+    - Deeper oxblood: #8a2d34 / #70222a / #4f171e with #bd7a16 amber
   */
-  --brand: #a6473e;
-  --brand-mid: #87362f;
-  --brand-dark: #62231f;
-  --brand-soft: #eadbdd;
-  --brand-quiet: #fbf4f4;
+  --brand: #b84a42;
+  --brand-mid: #963933;
+  --brand-dark: #6f2725;
+  --brand-soft: #f3dfd8;
+  --brand-quiet: #fff6f1;
   --teal: var(--brand-dark);
   --green: var(--brand-dark);
   --night: #121417;
@@ -55,7 +56,7 @@ a {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 3px solid rgba(158, 52, 56, 0.58);
+  outline: 3px solid rgba(216, 155, 34, 0.62);
   outline-offset: 4px;
 }
 
@@ -150,8 +151,8 @@ button:focus-visible {
     linear-gradient(
       180deg,
       rgba(8, 13, 19, 0.10) 0%,
-      rgba(12, 8, 10, 0.20) 58%,
-      rgba(35, 9, 12, 0.86) 100%
+      rgba(26, 15, 9, 0.20) 58%,
+      rgba(48, 15, 11, 0.84) 100%
     );
 }
 
@@ -165,7 +166,7 @@ button:focus-visible {
 
 .eyebrow {
   margin: 0 0 16px;
-  color: #d8a3a6;
+  color: #e4b36d;
   font-family: var(--font-mono), monospace;
   font-size: 12px;
   font-weight: 700;
@@ -228,16 +229,16 @@ h1 {
 }
 
 .button-primary {
-  border: 1px solid #a23d42;
+  border: 1px solid #bd5148;
   background: var(--brand);
   color: #fff;
-  box-shadow: 0 16px 40px rgba(95, 27, 34, 0.28);
+  box-shadow: 0 16px 40px rgba(111, 39, 37, 0.28);
 }
 
 .button-primary:hover {
   background: var(--brand-mid);
   border-color: var(--brand-mid);
-  box-shadow: 0 20px 52px rgba(95, 27, 34, 0.38);
+  box-shadow: 0 20px 52px rgba(111, 39, 37, 0.38);
   transform: translateY(-1px);
 }
 
@@ -343,14 +344,14 @@ h1 {
   border-radius: 8px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.9)),
-    linear-gradient(135deg, rgba(158, 52, 56, 0.07), rgba(143, 90, 16, 0.04));
-  box-shadow: inset 0 2px 0 rgba(158, 52, 56, 0.16), 0 12px 30px rgba(17, 24, 39, 0.06);
+    linear-gradient(135deg, rgba(184, 74, 66, 0.08), rgba(216, 155, 34, 0.06));
+  box-shadow: inset 0 2px 0 rgba(216, 155, 34, 0.22), 0 12px 30px rgba(17, 24, 39, 0.06);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .course-card:hover {
   transform: translateY(-3px);
-  box-shadow: inset 0 2px 0 rgba(158, 52, 56, 0.28), 0 22px 48px rgba(17, 24, 39, 0.11);
+  box-shadow: inset 0 2px 0 rgba(184, 74, 66, 0.28), 0 22px 48px rgba(17, 24, 39, 0.11);
 }
 
 .course-card-topline {
@@ -517,10 +518,10 @@ h1 {
   padding: 38px;
   border-radius: 8px;
   background:
-    linear-gradient(135deg, rgba(158, 52, 56, 0.18) 0%, transparent 55%),
-    linear-gradient(315deg, rgba(95, 27, 34, 0.12) 0%, transparent 50%),
+    linear-gradient(135deg, rgba(184, 74, 66, 0.18) 0%, transparent 55%),
+    linear-gradient(315deg, rgba(216, 155, 34, 0.10) 0%, transparent 50%),
     var(--night);
-  border: 1px solid rgba(158, 52, 56, 0.22);
+  border: 1px solid rgba(216, 155, 34, 0.18);
   color: #fff;
 }
 
@@ -620,7 +621,7 @@ h1 {
   min-height: 580px;
   background:
     linear-gradient(90deg, rgba(9, 12, 17, 0.97), rgba(50, 14, 18, 0.88)),
-    linear-gradient(135deg, #121417, #5f1b22 58%, #151517);
+    linear-gradient(135deg, #121417, #6f2725 58%, #9a6412);
 }
 
 .catalog-hero-content,
@@ -675,7 +676,7 @@ h1 {
 .catalog-hero-note svg {
   width: 28px;
   height: 28px;
-  color: #d8a3a6;
+  color: #e4b36d;
 }
 
 .catalog-hero-note p {
@@ -807,7 +808,7 @@ h1 {
 }
 
 .catalog-filters button.is-active {
-  border-color: rgba(198, 71, 75, 0.48);
+  border-color: rgba(184, 74, 66, 0.48);
   background: var(--brand-soft);
   color: var(--brand-dark);
 }
@@ -874,7 +875,7 @@ h1 {
 .catalog-card-media svg {
   width: 16px;
   height: 16px;
-  color: #d8a3a6;
+  color: #e4b36d;
 }
 
 .catalog-card-body {
