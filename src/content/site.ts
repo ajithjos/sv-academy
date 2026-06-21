@@ -1,12 +1,4 @@
-import {
-  BookOpenCheck,
-  Cpu,
-  LibraryBig,
-  PlayCircle,
-  Route,
-  ShieldCheck,
-  Waves,
-} from 'lucide-react';
+import { BookOpenCheck, Cpu, ShieldCheck, Waves } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
 export const siteConfig = {
@@ -27,9 +19,9 @@ export type FeatureItem = {
 };
 
 export const heroHighlights = [
-  '17K+ learner community',
-  '19 public course paths',
-  '309 videos organized by course',
+  'Legacy courses are now free to watch',
+  'Browse by course, module, and lesson',
+  'More updated material will follow',
 ];
 
 export const learningTracks: FeatureItem[] = [
@@ -56,32 +48,5 @@ export const learningTracks: FeatureItem[] = [
     description:
       'Move into SVA and UVM with courses organized around reusable structure and real verification code.',
     icon: ShieldCheck,
-  },
-];
-
-export const roadmapItems: FeatureItem[] = [
-  {
-    title: 'Course index',
-    description:
-      'Use this site as the organized index for the academy courses, modules, and lessons.',
-    icon: LibraryBig,
-  },
-  {
-    title: 'Clear paths',
-    description:
-      'Start with foundations, then move into RTL design, verification, assertions, and UVM.',
-    icon: Route,
-  },
-  {
-    title: 'Video lessons',
-    description:
-      'Lessons open on YouTube, while the course pages keep the sequence easy to follow.',
-    icon: PlayCircle,
-  },
-  {
-    title: 'Reference point',
-    description:
-      'Bookmark a course page when you want to return to the same module or lesson later.',
-    icon: BookOpenCheck,
   },
 ];

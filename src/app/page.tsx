@@ -3,22 +3,11 @@ import Link from 'next/link';
 import { ArrowRight, Mail, Search } from 'lucide-react';
 import { SiteFooter } from '@/components/SiteFooter';
 import { SiteHeader } from '@/components/SiteHeader';
-import { getCatalogStats, getFeaturedCourses } from '@/content/catalog';
-import {
-  heroHighlights,
-  learningTracks,
-  roadmapItems,
-  siteConfig,
-} from '@/content/site';
+import { getFeaturedCourses } from '@/content/catalog';
+import { heroHighlights, learningTracks, siteConfig } from '@/content/site';
 
 export default function HomePage() {
-  const catalogStats = getCatalogStats();
   const featuredCourses = getFeaturedCourses();
-  const academyStats = [
-    { value: String(catalogStats.courseCount), label: 'course paths' },
-    { value: String(catalogStats.moduleCount), label: 'modules' },
-    { value: String(catalogStats.availableLessonCount), label: 'video lessons' },
-  ];
 
   return (
     <main>
@@ -37,9 +26,8 @@ export default function HomePage() {
           <p className="eyebrow">SystemVerilog, SVA, UVM, RTL design</p>
           <h1 id="hero-title">SystemVerilog courses for design and verification.</h1>
           <p className="hero-copy">
-            Browse the SystemVerilog Academy course library by topic, module, and lesson. The
-            lessons are free to watch on YouTube, with this site keeping the course order easy to
-            follow.
+            The older academy courses have moved to YouTube and are free to watch. This site keeps
+            them easy to browse by course, module, and lesson while newer material is prepared.
           </p>
           <div className="hero-actions">
             <Link className="button button-primary" href="/courses">
@@ -56,15 +44,6 @@ export default function HomePage() {
             <span key={item}>{item}</span>
           ))}
         </div>
-      </section>
-
-      <section className="stats-section" aria-label="Legacy academy course library">
-        {academyStats.map((item) => (
-          <div className="stat-item" key={item.label}>
-            <strong>{item.value}</strong>
-            <span>{item.label}</span>
-          </div>
-        ))}
       </section>
 
       <section id="courses" className="content-section" aria-labelledby="courses-title">
@@ -136,23 +115,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="roadmap" className="roadmap-section" aria-labelledby="roadmap-title">
-        <div className="section-heading compact">
-          <p className="eyebrow dark">How it works</p>
-          <h2 id="roadmap-title">Use the site as the course index.</h2>
-        </div>
-        <div className="roadmap-list">
-          {roadmapItems.map((item, index) => (
-            <article className="roadmap-item" key={item.title}>
-              <span className="roadmap-index">{String(index + 1).padStart(2, '0')}</span>
-              <item.icon aria-hidden="true" />
-              <div>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-              </div>
-            </article>
-          ))}
-        </div>
+      <section className="relaunch-section" aria-labelledby="relaunch-title">
+        <p className="eyebrow dark">Relaunch note</p>
+        <h2 id="relaunch-title">The courses are open again.</h2>
+        <p>
+          The legacy paid course area has been closed, and the available lessons are now free on
+          YouTube. The catalog here is a cleaner way to find them. More refreshed lessons and notes
+          will be added over time.
+        </p>
       </section>
 
       <section className="cta-section" aria-label="Course catalog">

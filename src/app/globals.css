@@ -4,11 +4,12 @@
   --paper: #fbfaf7;
   --paper-strong: #ffffff;
   --line: #ddd8ce;
-  --amber: #e0a323;
-  --amber-dark: #9f6912;
+  --amber: #bd7a16;
+  --amber-dark: #8f5a10;
   --brand: #c6474b;
   --brand-dark: #943034;
   --brand-soft: #f7dfdf;
+  --brand-quiet: #fff5f5;
   --teal: var(--brand-dark);
   --green: var(--brand-dark);
   --night: #111820;
@@ -44,7 +45,7 @@ a {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 3px solid rgba(224, 163, 35, 0.72);
+  outline: 3px solid rgba(198, 71, 75, 0.64);
   outline-offset: 4px;
 }
 
@@ -59,7 +60,7 @@ button:focus-visible {
   justify-content: space-between;
   gap: 24px;
   width: min(1180px, calc(100% - 32px));
-  margin: 18px auto 0;
+  margin: 20px auto 0;
   color: #fff;
 }
 
@@ -76,18 +77,18 @@ button:focus-visible {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
-  border: 1px solid rgba(255, 255, 255, 0.36);
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.32);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.96);
   font-family: var(--font-mono), monospace;
   font-size: 13px;
 }
 
 .brand-symbol img {
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
 }
 
 .brand-mark small {
@@ -103,8 +104,14 @@ button:focus-visible {
   align-items: center;
   gap: 20px;
   font-size: 14px;
-  font-weight: 650;
-  color: rgba(255, 255, 255, 0.86);
+  font-weight: 750;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.header-nav a {
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .hero {
@@ -148,7 +155,7 @@ button:focus-visible {
 
 .eyebrow {
   margin: 0 0 16px;
-  color: #f3c766;
+  color: #f1b8ba;
   font-family: var(--font-mono), monospace;
   font-size: 12px;
   font-weight: 700;
@@ -157,7 +164,7 @@ button:focus-visible {
 }
 
 .eyebrow.dark {
-  color: var(--amber-dark);
+  color: var(--brand-dark);
 }
 
 h1,
@@ -209,10 +216,10 @@ h1 {
 }
 
 .button-primary {
-  border: 1px solid #f0c45f;
-  background: var(--amber);
-  color: #17110a;
-  box-shadow: 0 18px 42px rgba(224, 163, 35, 0.24);
+  border: 1px solid #d65a5f;
+  background: var(--brand);
+  color: #fff;
+  box-shadow: 0 18px 42px rgba(148, 48, 52, 0.24);
 }
 
 .button-secondary {
@@ -245,8 +252,7 @@ h1 {
 
 .content-section,
 .track-section,
-.roadmap-section,
-.stats-section,
+.relaunch-section,
 .cta-section,
 .site-footer {
   width: min(1180px, calc(100% - 32px));
@@ -277,43 +283,9 @@ h1 {
   line-height: 1.75;
 }
 
-.stats-section {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1px;
-  margin-top: 54px;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--line);
-}
-
-.stat-item {
-  min-height: 132px;
-  padding: 24px;
-  background: var(--paper-strong);
-}
-
-.stat-item strong {
-  display: block;
-  color: var(--amber-dark);
-  font-family: var(--font-mono), monospace;
-  font-size: clamp(34px, 5vw, 54px);
-  line-height: 1;
-}
-
-.stat-item span {
-  display: block;
-  max-width: 280px;
-  margin-top: 12px;
-  color: var(--ink-soft);
-  font-weight: 700;
-  line-height: 1.45;
-}
-
 .content-section,
 .track-section,
-.roadmap-section {
+.relaunch-section {
   padding: 70px 0;
 }
 
@@ -345,7 +317,7 @@ h1 {
   border-radius: 8px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.84)),
-    linear-gradient(135deg, rgba(224, 163, 35, 0.18), rgba(15, 118, 110, 0.08));
+    linear-gradient(135deg, rgba(198, 71, 75, 0.12), rgba(143, 90, 16, 0.06));
   box-shadow: 0 16px 34px rgba(17, 24, 39, 0.06);
 }
 
@@ -443,58 +415,43 @@ h1 {
   box-shadow: 0 18px 38px rgba(17, 24, 39, 0.06);
 }
 
-.feature-card svg,
-.roadmap-item svg {
+.feature-card svg {
   width: 30px;
   height: 30px;
   color: var(--teal);
 }
 
-.feature-card h3,
-.roadmap-item h3 {
+.feature-card h3 {
   margin: 24px 0 10px;
   font-size: 20px;
   line-height: 1.2;
 }
 
 .feature-card p,
-.roadmap-item p,
 .site-footer p {
   margin: 0;
   color: var(--ink-soft);
   line-height: 1.65;
 }
 
-.roadmap-section {
+.relaunch-section {
   border-top: 1px solid var(--line);
 }
 
-.roadmap-list {
-  display: grid;
-  gap: 12px;
-  margin-top: 34px;
+.relaunch-section h2 {
+  max-width: 720px;
+  margin: 0;
+  font-size: clamp(30px, 4vw, 54px);
+  line-height: 1.03;
+  letter-spacing: 0;
 }
 
-.roadmap-item {
-  display: grid;
-  grid-template-columns: 68px 42px minmax(0, 1fr);
-  gap: 20px;
-  align-items: start;
-  padding: 22px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #f4f1ea;
-}
-
-.roadmap-index {
-  color: var(--green);
-  font-family: var(--font-mono), monospace;
-  font-size: 14px;
-  font-weight: 800;
-}
-
-.roadmap-item h3 {
-  margin-top: 0;
+.relaunch-section p:not(.eyebrow) {
+  max-width: 780px;
+  margin: 18px 0 0;
+  color: var(--ink-soft);
+  font-size: 18px;
+  line-height: 1.75;
 }
 
 .cta-section {
@@ -529,9 +486,10 @@ h1 {
 
 .site-footer {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 32px 0 42px;
+  padding: 30px 0 38px;
   border-top: 1px solid var(--line);
 }
 
@@ -566,6 +524,11 @@ h1 {
   background: #fff;
 }
 
+.footer-icon-link:hover,
+.footer-email:hover {
+  color: var(--brand);
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -593,8 +556,8 @@ h1 {
 .catalog-hero {
   min-height: 580px;
   background:
-    linear-gradient(90deg, rgba(9, 18, 24, 0.96), rgba(16, 41, 43, 0.9)),
-    linear-gradient(135deg, #111820, #943034 58%, #9f6912);
+    linear-gradient(90deg, rgba(9, 14, 18, 0.96), rgba(42, 17, 19, 0.9)),
+    linear-gradient(135deg, #111820, #943034 58%, #151515);
 }
 
 .catalog-hero-content,
@@ -634,43 +597,28 @@ h1 {
   line-height: 1.6;
 }
 
-.catalog-hero-panel {
+.catalog-hero-note {
   display: grid;
-  gap: 1px;
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  grid-template-columns: 38px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+  padding: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.82);
 }
 
-.catalog-hero-panel div {
-  display: grid;
-  grid-template-columns: 34px minmax(0, 1fr);
-  gap: 6px 14px;
-  align-items: center;
-  min-height: 112px;
-  padding: 20px;
-  background: rgba(17, 24, 32, 0.76);
-}
-
-.catalog-hero-panel svg {
+.catalog-hero-note svg {
   width: 28px;
   height: 28px;
-  color: #f3c766;
+  color: #f1b8ba;
 }
 
-.catalog-hero-panel span {
-  font-family: var(--font-mono), monospace;
-  font-size: 36px;
-  font-weight: 850;
-  line-height: 1;
-}
-
-.catalog-hero-panel p {
-  grid-column: 2;
+.catalog-hero-note p {
   margin: 0;
-  color: rgba(255, 255, 255, 0.72);
-  font-weight: 750;
+  font-size: 17px;
+  line-height: 1.65;
 }
 
 .category-rail {
@@ -863,7 +811,7 @@ h1 {
 .catalog-card-media svg {
   width: 16px;
   height: 16px;
-  color: #f3c766;
+  color: #f1b8ba;
 }
 
 .catalog-card-body {
@@ -1368,7 +1316,6 @@ h1 {
   }
 
   .hero-highlights,
-  .stats-section,
   .section-grid,
   .section-heading,
   .course-grid,
@@ -1385,22 +1332,10 @@ h1 {
     padding: 15px 16px;
   }
 
-  .stats-section {
-    margin-top: 34px;
-  }
-
   .content-section,
   .track-section,
-  .roadmap-section {
+  .relaunch-section {
     padding: 50px 0;
-  }
-
-  .roadmap-item {
-    grid-template-columns: 44px minmax(0, 1fr);
-  }
-
-  .roadmap-item svg {
-    display: none;
   }
 
   .cta-section,
@@ -1414,10 +1349,9 @@ h1 {
   .site-header,
   .hero-content,
   .hero-highlights,
-  .stats-section,
   .content-section,
   .track-section,
-  .roadmap-section,
+  .relaunch-section,
   .cta-section,
   .site-footer {
     width: min(100% - 24px, 1180px);
@@ -1441,10 +1375,6 @@ h1 {
 
   .button {
     min-height: 48px;
-  }
-
-  .roadmap-item {
-    padding: 18px;
   }
 
   .cta-section {
@@ -1554,8 +1484,9 @@ h1 {
     min-height: 640px;
   }
 
-  .catalog-hero-panel div {
-    min-height: 92px;
+  .catalog-hero-note {
+    grid-template-columns: 1fr;
+    padding: 18px;
   }
 
   .category-rail,

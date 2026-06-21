@@ -1,11 +1,10 @@
 import type { Metadata } from 'next';
-import { BookOpenCheck, LibraryBig, PlayCircle } from 'lucide-react';
+import { PlayCircle } from 'lucide-react';
 import { SiteFooter } from '@/components/SiteFooter';
 import { SiteHeader } from '@/components/SiteHeader';
 import {
   courseCategories,
   getCatalogCourses,
-  getCatalogStats,
   type CourseCategory,
 } from '@/content/catalog';
 import { siteConfig } from '@/content/site';
@@ -42,7 +41,6 @@ function CategoryRail({ categories }: { categories: CourseCategory[] }) {
 
 export default function CoursesPage() {
   const courses = getCatalogCourses();
-  const stats = getCatalogStats();
 
   return (
     <main>
@@ -53,27 +51,16 @@ export default function CoursesPage() {
             <p className="eyebrow">Public course catalog</p>
             <h1 id="catalog-title">SystemVerilog Academy course catalog.</h1>
             <p className="catalog-hero-copy">
-              Browse courses by topic, module, and lesson. Start with the foundations, move into
-              RTL design, then build verification, assertions, and UVM skills through the academy
-              sequence.
+              The legacy course library is now free to watch on YouTube. Browse the courses here by
+              topic and module, then open the lesson you need.
             </p>
           </div>
-          <div className="catalog-hero-panel" aria-label="Catalog snapshot">
-            <div>
-              <LibraryBig aria-hidden="true" />
-              <span>{stats.courseCount}</span>
-              <p>Courses</p>
-            </div>
-            <div>
-              <BookOpenCheck aria-hidden="true" />
-              <span>{stats.moduleCount}</span>
-              <p>Modules</p>
-            </div>
-            <div>
-              <PlayCircle aria-hidden="true" />
-              <span>{stats.availableLessonCount}</span>
-              <p>Videos</p>
-            </div>
+          <div className="catalog-hero-note">
+            <PlayCircle aria-hidden="true" />
+            <p>
+              Lessons open on YouTube. More updated material will be added as the academy is
+              refreshed.
+            </p>
           </div>
         </div>
       </section>
