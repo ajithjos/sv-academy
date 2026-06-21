@@ -338,7 +338,7 @@ function normalizeCourse(course: RawCourse): CatalogCourse {
     slug: course.slug,
     title: course.title,
     subtitle: course.subtitle ?? '',
-    description: course.description ?? 'Structured SystemVerilog Academy lessons on YouTube.',
+    description: course.description ?? 'Structured SystemVerilog Academy course.',
     category,
     counts: {
       modules: course.counts?.modules ?? modules.length,

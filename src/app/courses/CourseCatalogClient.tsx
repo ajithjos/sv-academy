@@ -48,7 +48,7 @@ export function CourseCatalogClient({ courses, categories }: CourseCatalogClient
       <div className="catalog-toolbar">
         <div>
           <p className="eyebrow dark">Course library</p>
-          <h2 id="course-browser-title">Browse the public learning paths.</h2>
+          <h2 id="course-browser-title">Browse learning paths.</h2>
         </div>
         <label className="catalog-search">
           <Search aria-hidden="true" />
@@ -136,7 +136,7 @@ export function CourseCatalogClient({ courses, categories }: CourseCatalogClient
                   <span>
                     {course.counts.missingLessons > 0
                       ? `${course.counts.availableLessons}/${course.counts.lessons} lessons available`
-                      : 'Complete YouTube path'}
+                      : 'All videos available'}
                   </span>
                 </div>
                 <div className="catalog-card-actions">

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, ExternalLink, Mail, PlayCircle, Search } from 'lucide-react';
+import { ArrowRight, Mail, Search } from 'lucide-react';
 import { SiteFooter } from '@/components/SiteFooter';
 import { SiteHeader } from '@/components/SiteHeader';
 import { getCatalogStats, getFeaturedCourses } from '@/content/catalog';
@@ -15,9 +15,9 @@ export default function HomePage() {
   const catalogStats = getCatalogStats();
   const featuredCourses = getFeaturedCourses();
   const academyStats = [
-    { value: String(catalogStats.courseCount), label: 'public course paths in the academy library' },
-    { value: String(catalogStats.moduleCount), label: 'modules across the structured curriculum' },
-    { value: String(catalogStats.availableLessonCount), label: 'YouTube lessons ready to watch' },
+    { value: String(catalogStats.courseCount), label: 'course paths' },
+    { value: String(catalogStats.moduleCount), label: 'modules' },
+    { value: String(catalogStats.availableLessonCount), label: 'video lessons' },
   ];
 
   return (
@@ -34,42 +34,20 @@ export default function HomePage() {
         />
         <div className="hero-shade" />
         <div className="hero-content">
-          <div className="hero-brand-lockup">
-            <Image
-              src="/images/systemverilog-academy-logo.png"
-              alt=""
-              width={58}
-              height={58}
-              priority
-            />
-            <div>
-              <p>{siteConfig.name}</p>
-              <span>{siteConfig.subtitle}</span>
-            </div>
-          </div>
           <p className="eyebrow">SystemVerilog, SVA, UVM, RTL design</p>
-          <h1 id="hero-title">
-            Learn chip design and verification with practical code-first lessons.
-          </h1>
+          <h1 id="hero-title">SystemVerilog courses for design and verification.</h1>
           <p className="hero-copy">
-            The academy course library is moving to a free YouTube-first model. Start from beginner
-            SystemVerilog, then move into RTL design, testbench construction, functional coverage,
-            assertions, simulation regions, and UVM.
+            Browse the SystemVerilog Academy course library by topic, module, and lesson. The
+            lessons are free to watch on YouTube, with this site keeping the course order easy to
+            follow.
           </p>
           <div className="hero-actions">
-            <a
-              className="button button-primary"
-              href={siteConfig.youtubeUrl}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <PlayCircle aria-hidden="true" />
-              <span>Open YouTube channel</span>
-              <ExternalLink aria-hidden="true" />
-            </a>
-            <a className="button button-secondary" href="#courses">
+            <Link className="button button-primary" href="/courses">
               <Search aria-hidden="true" />
-              <span>Preview courses</span>
+              <span>Browse courses</span>
+            </Link>
+            <a className="button button-secondary" href="#tracks">
+              <span>View tracks</span>
             </a>
           </div>
         </div>
@@ -93,12 +71,11 @@ export default function HomePage() {
         <div className="section-heading">
           <div>
             <p className="eyebrow dark">Course previews</p>
-            <h2 id="courses-title">A real course library, now easier to discover.</h2>
+            <h2 id="courses-title">Start with the course that matches your next step.</h2>
           </div>
           <p>
-            These paths come from the academy course library. The new site keeps the public
-            experience lightweight while pointing learners directly to the YouTube channel for the
-            current lessons.
+            These are a few common entry points from the catalog. Open a course to see its modules,
+            lesson order, and video links.
           </p>
         </div>
         <div className="course-grid">
@@ -141,11 +118,11 @@ export default function HomePage() {
         <div className="section-heading">
           <div>
             <p className="eyebrow dark">Learning tracks</p>
-            <h2 id="tracks-title">From first module to reusable verification architecture.</h2>
+            <h2 id="tracks-title">A practical path through design and verification.</h2>
           </div>
           <p>
-            The academy works best when the path is visible: basics first, then RTL, then
-            verification, then assertions and UVM with enough code to make the ideas stick.
+            Start with the basics, then build toward RTL coding, verification, assertions, and UVM.
+            The catalog keeps those paths separate enough to browse quickly.
           </p>
         </div>
         <div className="feature-grid">
@@ -161,8 +138,8 @@ export default function HomePage() {
 
       <section id="roadmap" className="roadmap-section" aria-labelledby="roadmap-title">
         <div className="section-heading compact">
-          <p className="eyebrow dark">Next platform</p>
-          <h2 id="roadmap-title">The full academy can come back in layers.</h2>
+          <p className="eyebrow dark">How it works</p>
+          <h2 id="roadmap-title">Use the site as the course index.</h2>
         </div>
         <div className="roadmap-list">
           {roadmapItems.map((item, index) => (
@@ -178,21 +155,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="cta-section" aria-label="YouTube lessons">
+      <section className="cta-section" aria-label="Course catalog">
         <div>
-          <p className="eyebrow">Watch now</p>
-          <h2>Browse the free SystemVerilog Academy lessons on YouTube.</h2>
+          <p className="eyebrow">Course catalog</p>
+          <h2>Find the next course and keep the sequence clear.</h2>
         </div>
         <div className="cta-actions">
-          <a
-            className="button button-primary"
-            href={siteConfig.youtubeUrl}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span>Open channel</span>
+          <Link className="button button-primary" href="/courses">
+            <span>Browse courses</span>
             <ArrowRight aria-hidden="true" />
-          </a>
+          </Link>
           <a className="button button-secondary on-dark" href={`mailto:${siteConfig.contactEmail}`}>
             <Mail aria-hidden="true" />
             <span>Contact</span>

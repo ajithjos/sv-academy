@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { ExternalLink, PlayCircle } from 'lucide-react';
 import { siteConfig } from '@/content/site';
 
 export function SiteHeader() {
@@ -24,11 +23,6 @@ export function SiteHeader() {
       <nav className="header-nav" aria-label="Primary navigation">
         <Link href="/courses">Courses</Link>
         <Link href="/#tracks">Tracks</Link>
-        <a className="header-action" href={siteConfig.youtubeUrl} target="_blank" rel="noreferrer">
-          <PlayCircle aria-hidden="true" />
-          <span>YouTube</span>
-          <ExternalLink aria-hidden="true" />
-        </a>
       </nav>
     </header>
   );

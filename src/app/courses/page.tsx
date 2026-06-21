@@ -14,14 +14,14 @@ import { CourseCatalogClient } from './CourseCatalogClient';
 export const metadata: Metadata = {
   title: 'Courses',
   description:
-    'Browse the public SystemVerilog Academy course library with structured modules, lessons, and YouTube playlists.',
+    'Browse the SystemVerilog Academy course library with structured modules, lessons, and video links.',
   alternates: {
     canonical: `https://${siteConfig.domain}/courses`,
   },
   openGraph: {
     title: `Courses | ${siteConfig.name}`,
     description:
-      'Structured SystemVerilog, RTL design, verification, assertions, and UVM courses now available through YouTube.',
+      'Structured SystemVerilog, RTL design, verification, assertions, and UVM courses.',
     url: `https://${siteConfig.domain}/courses`,
   },
 };
@@ -51,11 +51,11 @@ export default function CoursesPage() {
         <div className="catalog-hero-content">
           <div>
             <p className="eyebrow">Public course catalog</p>
-            <h1 id="catalog-title">The academy library is now a structured YouTube-first path.</h1>
+            <h1 id="catalog-title">SystemVerilog Academy course catalog.</h1>
             <p className="catalog-hero-copy">
-              Browse the public catalog by course, module, and lesson. Start with the foundations,
-              move into RTL design, then build verification, assertions, and UVM skills through the
-              original academy sequence.
+              Browse courses by topic, module, and lesson. Start with the foundations, move into
+              RTL design, then build verification, assertions, and UVM skills through the academy
+              sequence.
             </p>
           </div>
           <div className="catalog-hero-panel" aria-label="Catalog snapshot">
@@ -72,7 +72,7 @@ export default function CoursesPage() {
             <div>
               <PlayCircle aria-hidden="true" />
               <span>{stats.availableLessonCount}</span>
-              <p>Videos ready</p>
+              <p>Videos</p>
             </div>
           </div>
         </div>

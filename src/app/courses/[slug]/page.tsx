@@ -184,7 +184,7 @@ export default async function CoursePage({ params }: CoursePageProps) {
             ) : null}
             {course.youtube.playlistUrl ? (
               <a className="button button-secondary" href={course.youtube.playlistUrl} target="_blank" rel="noreferrer">
-                <span>Open YouTube playlist</span>
+                <span>Open playlist</span>
                 <ExternalLink aria-hidden="true" />
               </a>
             ) : null}
