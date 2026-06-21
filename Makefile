@@ -1,12 +1,12 @@
 SHELL := /bin/bash
 
 DEV_APP_PORT ?= 3022
-DEPLOY_ENV_FILE ?= deploy/config/environments/prod.gcp.env
+DEPLOY_GCP_ENV_FILE ?= deploy/config/environments/prod.gcp.env
 IMAGE_TAG ?= $(shell git rev-parse --short HEAD 2>/dev/null || echo manual)
 
 LEGACY_COURSES ?=
 
-.PHONY: help context doctor setup devkit-bootstrap submodules-master submodules-master-check clean clean-python clean-all clean-deps dev-up build start lint typecheck format format-check check course-dataset docker-build deploy-plan deploy
+.PHONY: help context doctor gcloud-setup setup devkit-bootstrap submodules-master submodules-master-check clean clean-python clean-all clean-deps dev-up build start lint typecheck format format-check check course-dataset docker-build deploy-bootstrap deploy-plan deploy
 
 DEVKIT_MAKE := $(MAKE) --no-print-directory -C dev/devkit REPO_ROOT=$(CURDIR)
 
@@ -18,11 +18,14 @@ devkit-bootstrap:
 context: devkit-bootstrap
 	@$(DEVKIT_MAKE) context
 	@echo
-	@DEPLOY_ENV_FILE="$(DEPLOY_ENV_FILE)" IMAGE_TAG="$(IMAGE_TAG)" bash deploy/cloudrun/deploy.sh context
+	@DEPLOY_GCP_ENV_FILE="$(DEPLOY_GCP_ENV_FILE)" IMAGE_TAG="$(IMAGE_TAG)" bash deploy/cloudrun/deploy.sh context
 
 doctor: devkit-bootstrap
 	@$(DEVKIT_MAKE) doctor
-	@DEPLOY_ENV_FILE="$(DEPLOY_ENV_FILE)" IMAGE_TAG="$(IMAGE_TAG)" bash deploy/cloudrun/deploy.sh doctor
+	@DEPLOY_GCP_ENV_FILE="$(DEPLOY_GCP_ENV_FILE)" IMAGE_TAG="$(IMAGE_TAG)" bash deploy/cloudrun/deploy.sh doctor
+
+gcloud-setup: devkit-bootstrap
+	@DEPLOY_GCP_ENV_FILE="$(DEPLOY_GCP_ENV_FILE)" IMAGE_TAG="$(IMAGE_TAG)" bash deploy/cloudrun/deploy.sh gcloud-setup
 
 setup: devkit-bootstrap
 	$(DEVKIT_MAKE) setup
@@ -74,10 +77,13 @@ course-dataset:
 	python3 scripts/youtube_sync/generate_course_dataset.py --legacy-file "$(LEGACY_COURSES)"
 
 docker-build:
-	DEPLOY_ENV_FILE="$(DEPLOY_ENV_FILE)" IMAGE_TAG="$(IMAGE_TAG)" bash deploy/cloudrun/deploy.sh docker-build
+	DEPLOY_GCP_ENV_FILE="$(DEPLOY_GCP_ENV_FILE)" IMAGE_TAG="$(IMAGE_TAG)" bash deploy/cloudrun/deploy.sh docker-build
+
+deploy-bootstrap:
+	DEPLOY_GCP_ENV_FILE="$(DEPLOY_GCP_ENV_FILE)" IMAGE_TAG="$(IMAGE_TAG)" bash deploy/cloudrun/deploy.sh bootstrap
 
 deploy-plan:
-	DEPLOY_ENV_FILE="$(DEPLOY_ENV_FILE)" IMAGE_TAG="$(IMAGE_TAG)" bash deploy/cloudrun/deploy.sh plan
+	DEPLOY_GCP_ENV_FILE="$(DEPLOY_GCP_ENV_FILE)" IMAGE_TAG="$(IMAGE_TAG)" bash deploy/cloudrun/deploy.sh plan
 
 deploy:
-	DEPLOY_ENV_FILE="$(DEPLOY_ENV_FILE)" IMAGE_TAG="$(IMAGE_TAG)" bash deploy/cloudrun/deploy.sh deploy
+	DEPLOY_GCP_ENV_FILE="$(DEPLOY_GCP_ENV_FILE)" IMAGE_TAG="$(IMAGE_TAG)" bash deploy/cloudrun/deploy.sh deploy
