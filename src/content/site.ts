@@ -29,7 +29,7 @@ export type FeatureItem = {
 
 export const heroHighlights = [
   '17K+ learner community',
-  '17 course paths in the academy library',
+  '19 public course paths in the academy library',
   'Lessons now available through YouTube',
 ];
 

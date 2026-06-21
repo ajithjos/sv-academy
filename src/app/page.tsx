@@ -1,21 +1,25 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { ArrowRight, ExternalLink, Mail, PlayCircle, Search } from 'lucide-react';
 import { SiteFooter } from '@/components/SiteFooter';
 import { SiteHeader } from '@/components/SiteHeader';
+import { getCatalogStats, getFeaturedCourses } from '@/content/catalog';
 import {
-  academyStats,
-  coursePreviews,
   heroHighlights,
   learningTracks,
   roadmapItems,
   siteConfig,
 } from '@/content/site';
 
-function channelSearchUrl(query: string) {
-  return `${siteConfig.youtubeUrl.replace(/\/$/, '')}/search?query=${encodeURIComponent(query)}`;
-}
-
 export default function HomePage() {
+  const catalogStats = getCatalogStats();
+  const featuredCourses = getFeaturedCourses();
+  const academyStats = [
+    { value: String(catalogStats.courseCount), label: 'public course paths in the academy library' },
+    { value: String(catalogStats.moduleCount), label: 'modules across the structured curriculum' },
+    { value: String(catalogStats.availableLessonCount), label: 'YouTube lessons ready to watch' },
+  ];
+
   return (
     <main>
       <SiteHeader />
@@ -98,30 +102,38 @@ export default function HomePage() {
           </p>
         </div>
         <div className="course-grid">
-          {coursePreviews.map((course) => (
+          {featuredCourses.map((course) => (
             <article className="course-card" key={course.title}>
               <div className="course-card-topline">
-                <span>{course.topic}</span>
-                <span>{course.level}</span>
+                <span>{course.category.shortLabel}</span>
+                <span>
+                  {course.counts.modules} module{course.counts.modules === 1 ? '' : 's'}
+                </span>
               </div>
               <h3>{course.title}</h3>
               <p>{course.description}</p>
               <dl>
                 <div>
                   <dt>Modules</dt>
-                  <dd>{course.modules}</dd>
+                  <dd>{course.counts.modules}</dd>
                 </div>
                 <div>
                   <dt>Lessons</dt>
-                  <dd>{course.lessons}</dd>
+                  <dd>{course.counts.lessons}</dd>
                 </div>
               </dl>
-              <a href={channelSearchUrl(course.query)} target="_blank" rel="noreferrer">
-                <span>Find on YouTube</span>
+              <Link href={`/courses/${course.slug}`}>
+                <span>Open course</span>
                 <ArrowRight aria-hidden="true" />
-              </a>
+              </Link>
             </article>
           ))}
+        </div>
+        <div className="section-more-action">
+          <Link className="button button-primary" href="/courses">
+            <span>Browse all courses</span>
+            <ArrowRight aria-hidden="true" />
+          </Link>
         </div>
       </section>
 

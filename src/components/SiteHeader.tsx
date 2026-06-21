@@ -22,8 +22,8 @@ export function SiteHeader() {
         </span>
       </Link>
       <nav className="header-nav" aria-label="Primary navigation">
-        <a href="#courses">Courses</a>
-        <a href="#tracks">Tracks</a>
+        <Link href="/courses">Courses</Link>
+        <Link href="/#tracks">Tracks</Link>
         <a className="header-action" href={siteConfig.youtubeUrl} target="_blank" rel="noreferrer">
           <PlayCircle aria-hidden="true" />
           <span>YouTube</span>
